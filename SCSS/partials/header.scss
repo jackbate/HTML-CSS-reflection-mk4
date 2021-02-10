@@ -1,0 +1,64 @@
+.supBtn{
+    display: inline;
+    background-color: #4183d7;
+    padding: 5px 15px;
+    border: #f1f1f1 1px solid;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.contBtn{
+    background-color: #999aa2;
+    padding: 5px 15px;
+    border: #f1f1f1 1px solid;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+.site-logo{
+    width: 195px;
+    height: auto;
+}
+
+.headerpad{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headBtn{
+    display: none;
+}
+
+
+Header_buttons{
+    .supBtn{
+        display: inline;
+        background-color: #4183d7;
+        padding: 5px 15px;
+        border: #f1f1f1 1px solid;
+        border-radius: 3px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .contBtn{
+        background-color: #999aa2;
+        padding: 5px 15px;
+        border: #f1f1f1 1px solid;
+        border-radius: 3px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+    }
+}

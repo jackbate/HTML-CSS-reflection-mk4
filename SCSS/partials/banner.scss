@@ -1,0 +1,20 @@
+.banner{
+    height: 70vh;
+    background-image: url("../Images/sliderplaceholder.png");
+    background-size: cover;
+}
+
+.banner-text{
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.banner_btn{
+    background-color: #926fb1;
+}
+.banner-section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+}

@@ -1,0 +1,119 @@
+.services{
+    width: 100%;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;   
+}
+
+.card{
+    margin: 15px;
+    padding: 15px;
+    border: rgba(102,102, 102, 0.4) 1px solid;
+    border-radius: 5px;
+    box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+    font-size: 13px;
+}
+
+.circback{
+    border: white 0px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+
+hover_functions{
+    .bSoftware:hover{
+        background-color: #67809f;
+        .besBtn:hover{
+            color: #67809f;
+            background-color: white;
+        }    
+    }
+
+    .itSup:hover{
+        background-color: #4183d7;
+        .itBtn{
+            color: #4183d7;
+            background-color: white;
+        }
+    }
+
+    .digMark:hover{
+        background-color: #2ecc71;
+        .digBtn{
+            color: #2ecc71;
+            background-color: white;
+        }
+    }
+
+    .teleServ:hover{
+        background-color: #d64541;
+        .teleBtn{
+            color: #d64541;
+            background-color: white;
+        }
+    }
+
+    .webDes:hover{
+        background-color: #926fb1;
+        .webBtn{
+            color: #926fb1;
+            background-color: white;
+        }
+    }
+
+    .cybSec:hover{
+        background-color: #f62459;
+        .cybBtn{
+            color: #f62459;
+            background-color: white;
+        }
+    }
+
+    .devTrain:hover{
+        background-color: #926fb1;
+        .devBtn{
+            color: #926fb1;
+            background-color: white;
+        }
+    }
+}
+
+
+button_colors{
+    .besBtn{
+        background-color: #67809f;
+    }
+
+    .itBtn{
+        background-color: #4183d7;
+    }
+
+    .digBtn{
+        background-color: #2ecc71;
+    }
+
+    .teleBtn{
+        background-color: #d64541;
+    }
+
+    .webBtn{
+        background-color: #926fb1;
+    }
+
+    .cybBtn{
+        background-color: #f62459;
+    }
+
+    .devBtn{
+        background-color: #926fb1;
+    }
+}

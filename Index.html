@@ -8,7 +8,7 @@
 
         <title>Home| Netmatters</title>
         <!-- Link to stylesheet -->
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style2.css">
 
         <!-- This is the link to google fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,112 +23,198 @@
         
         <header>
             <div class="content-wrapper">
-                <div class="site-logo">
-                <a href="#header"><img src="../HTML: CSS reflection mk2/Images/Netmatterslogo.png" alt="Netmatters Logo"></a>
-                </div>
-                <!-- This is going to be the two buttons for the support and contact buttons at the top of the page -->
-                <div class="headButton">
-                    <a href="#" class="supBtn"><img src="">Support</a>
-                    <a href="#" class="contBtn"><img src="">Contact</a>
+                <div class="headerpad">
+                    <div class="site-logo">
+                    <a href="#header"><img src="../HTML: CSS reflection mk2/Images/Netmatterslogo.png" alt="Netmatters Logo"></a>
+                    </div>
+                    <!-- This is going to be the two buttons for the support and contact buttons at the top of the page -->
+                    <div class="headBtn">
+                        <a href="#" class="supBtn"><i class="fas fa-mouse"></i> Support</a>
+                        <a href="#" class="contBtn"><i class="far fa-paper-plane"></i> Contact</a>
+                    </div>
+                    <div class="menuBtn">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </div>
             </div>
         </header>
 
+
+        <!-- <div class="content-wrapper">
+            <div class="navbar">
+                <div class="nav1">
+                    <a href="#" class="navbox nodec">
+                        <p class="navsmall">WEB</p>
+                        <p>DESIGN</p>
+                    </a>
+                </div>
+                <div class="nav2">
+                    <a href="#" class="nodec navbox">
+                       <p class="navsmall"></p>IT</p>
+                       <p> SUPPORT</p> 
+                    </a>
+                </div>
+                <div class="nav3">
+                    <a href="#" class="nodec navbox">
+                        <p class="navsmall">TELECOMS</p>
+                        <p>SERVICES</p>
+                    </a>
+                </div>
+                <div class="nav4">
+                    <a href="#" class="nodec navbox">
+                        <p class="navsmall">BESPOKE</p>
+                        <p>SOFTWARE</p>
+                    </a>
+                </div>
+                <div class="nav5">
+                    <a href="#" class="nodec navbox">
+                        <p class="navsmall">DIGITAL</p>
+                        <p>MARKETING</p>
+                    </a>
+                </div>
+                <div class="nav6">
+                    <a href="#" class="nodec navbox">
+                        <p class="navsmall">CYBER</p>
+                        <p>SECURITY</p>
+                    </a>
+                </div>
+            </div>
+
+        </div> -->
+
         <section class="banner">
-            <div class="banner_img">
-                <img src="../HTML:CSS reflection mk3/Images/sliderplaceholder.png" alt="Web  development">
-            </div>
-            <div class="banner-text">
-                <h1>Web design</h1>
-                <p>For businesses looking to make a strong<br> and effective first impression</p>
-            </div>
-            <div class="banner-btn">
-                <a href="#" class="btn">Find out more</a>
+            <div class="content-wrapper">
+                <div class="banner-section">
+                    <!-- <div class="banner_img">
+                        <img src="../HTML:CSS reflection mk3/Images/sliderplaceholder.png" alt="Web  development">
+                    </div> -->
+                    <div class="banner-text">
+                        <h1>Web design</h1>
+                        <p>For businesses looking to make a strong<br> and effective first impression</p>
+                    </div>
+                    <div class="banner-btn">
+                        <a href="#" class="btn banbtn">Find out more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <div class="services content-wrapper">
-            <div class="cards">
-                <div class="card bSoftware widthwide">
-                    <h3 class="lightfw">Bespoke Software</h3>
-                    <p>Tailored software solutions to improve buisness productivity and online profits. Our expert team will ensure a software soltion.</p>
-                    <a href="#" class="btn besBtn">READ MORE</a>
+
+        <div class="services">
+            <div class="content-wrapper">
+                <div class="flexbox">
+                    <div class="card bSoftware">
+                        <i class="fab fa-uncharted fa-2x circback  besBtn"></i>
+                        <h3 class="lightfw">Bespoke Software</h3>
+                        <p>Tailored software solutions to improve buisness productivity and online profits. Our expert team will ensure a software soltion.</p>
+                        <a href="#" class="btn besBtn">READ MORE</a>
+                    </div>
+                    <div class="card itSup">
+                        <i class="fas fa-desktop fa-2x circback itBtn"></i>
+                        <h3 class="lightfw">IT Support</h3>
+                        <p>Remotely managed IT services that is catered to your business needs, adds value and reduces cost.</p>
+                        <a href="#" class="btn itBtn">READ MORE</a>
+                    </div>
+                    <div class="card digMark">
+                        <i class="far fa-chart-bar fa-2x circback digBtn"></i>
+                        <h3 class="lightfw">Digital Marketing</h3>
+                        <p>Driving brand awareness and ROI through creative digital marketing campaings. We review and monitor onlune performances.</p>
+                        <a href="#" class="btn digBtn">READ MORE</a>
+                    </div>
+                    <div class="card teleServ">
+                        <i class="fas fa-phone-alt fa-2x circback teleBtn"></i>
+                        <h3 class="lightfw">Telecoms Services</h3>
+                        <P>Stay connected with bespoke telecoms solutions when you need it most.</P>
+                        <a href="#" class="btn teleBtn">READ MORE</a>
+                    </div>
+                    <div class="card webDes">
+                        <i class="fas fa-code fa-2x circback webBtn"></i>
+                        <h3 class="lightfw">Web Design</h3>
+                        <p>User-centric design for buisnesses looking to make a lasting impression.</p>
+                        <a href="#" class="btn webBtn">READ MORE</a>
+                    </div>
+                    <div class="card cybSec">
+                        <i class="fas fa-shield-alt fa-2x circback cybBtn"></i>
+                        <h3 class="lightfw">Cyber Security</h3>
+                        <p>Ensruing your online buisness stay's secure 24/7, 265 days of the year.</p>
+                        <a href="#" class="btn cybBtn">READ MORE</a>
+                    </div>
+                    <div class="card devTrain">
+                        <i class="fas fa-graduation-cap fa-2x circback devBtn"></i>
+                        <h3 class="lightfw">Developer Training</h3>
+                        <p>Have you considered a career in web development but you aren't sure where to start?</p>
+                        <a href="#" class="btn devBtn">READ MORE</a>
+                    </div>
                 </div>
-                <div class="card itSup widthwide">
-                    <h3 class="lightfw">IT Support</h3>
-                    <p>Remotely managed IT services that is catered to your business needs, adds value and reduces cost.</p>
-                    <a href="#" class="btn itBtn">READ MORE</a>
-                </div>
-                <div class="card digMark widthwide">
-                    <h3 class="lightfw">Digital Marketing</h3>
-                    <p>Driving brand awareness and ROI through creative digital marketing campaings. We review and monitor onlune performances.</p>
-                    <a href="#" class="btn digBtn">READ MORE</a>
-                </div>
-                <div class="card tele widthnarrow">
-                    <h3 class="lightfw">Telecoms Services</h3>
-                    <P>Stay connected with bespoke telecoms solutions when you need it most.</P>
-                    <a href="#" class="btn teleBtn">READ MORE</a>
-                </div>
-                <div class="card webDes widthnarrow">
-                    <h3 class="lightfw">Web Design</h3>
-                    <p>User-centric design for buisnesses looking to make a lasting impression.</p>
-                    <a href="#" class="btn webBtn">READ MORE</a>
-                </div>
-                <div class="card cybSec widthnarrow">
-                    <h3 class="lightfw">Cyber Security</h3>
-                    <p>Ensruing your online buisness stay's secure 24/7, 265 days of the year.</p>
-                    <a href="#" class="btn cybBtn">READ MORE</a>
-                </div>
-                <div class="card devTrain widthnarrow">
-                    <h3 class="lightfw">Developer Training</h3>
-                    <p>Have you considered a career in web development but you aren't sure where to start?</p>
-                    <a href="#" class="btn devBtn">READ MORE</a>
-                </div>
-            </div>
+            </div>  
         </div>
 
         <section class="about">
-            <div class="aboutContent content-wrapper">
-                <div class="ahead">
-                    <h3>Netmatters</h3>
-                </div>
-                <div class="marginbot">
-                    <p class="ap1">Netmatters Ltd is a leading web design, IT support and digital marketing agency baswed in Wymondum, Norfolk.</p>
-                        
-                    <p>Founded in 2008 , we work with buisnesses from a variety of industries to gain new prospects, nurture existing leads and further grow their sales.</p>
+            <div class="content-wrapper">
+                <div class="aboutContent">
+                    <div>
+                        <h3 class="ahead">Netmatters</h3>
+                    </div>
+                    <div class="marginbot">
+                        <p class="ap1">Netmatters Ltd is a leading web design, IT support and digital marketing agency baswed in Wymondum, Norfolk.</p>
+                            
+                        <p>Founded in 2008 , we work with buisnesses from a variety of industries to gain new prospects, nurture existing leads and further grow their sales.</p>
 
-                    <p>We provide cost effective, reliable solutions to a range of services; from bespoke  could-based management systems, workflow and IT solutions through to creative website  development and intergrated digital campaining.</p>
+                        <p>We provide cost effective, reliable solutions to a range of services; from bespoke  could-based management systems, workflow and IT solutions through to creative website  development and intergrated digital campaining.</p>
+                    </div>
+        
+                    <a href="#header" class="btn ourCult" id="ourCult">OUR CULTURE</a>
                 </div>
-    
-                <a href="#header" class="btn ourCult" id="ourCult">OUR CULTURE</a>
             </div>
         </section>
 
 
-        <div id="updateshead" class="content-wrapper">
-            <div class="latest">
-                <h3 class="latestHeader">LATEST</h3>
-            </div>
+        <div id="latestContainer">
+            <div class="content-wrapper">
+                <div class="latest">
+                    <h3 class="latestHeader">LATEST</h3>
+                </div>
+            </div>  
         </div>
 
-        <div class="content-wrapper">
-            <div class="updates">
-                <div class="upd1 card">
-                    <h3 class="upbluhead">December 2020 Notable Employee</h3>
-                        <p class="updp">Each month we celebrate the most notable of employees here at Netmatters by asking departme...</p>
-                        <a href="#header" class="readMore upblubut">READ MORE</a>
+        <div class="">
+            <section class="content-wrapper">
+                <div class="updates flexbox">
+                    <div class="upd1 card">
+                        <h3 class="upbluhead">December 2020 Notable Employee</h3>
+                            <p class="updp">Each month we celebrate the most notable of employees here at Netmatters by asking departme...</p>
+                            <a href="#header" class="btn upblubtn widthwide">READ MORE</a>
+                    </div>
+                    <div class="upd2 card">
+                        <h3 class="uppurphead">Happy 30th birthday Matt Hurst</h3>
+                            <p class="updp">Today we celebrate Matt Hurst's 30th Birthday! Matt is one of our 3rd line IT Support Technic...</p>
+                            <a href="#header" class="btn  uppurpbtn widthwide">READ MORE</a>
+                    </div>
+                    <div class="upd3 card">
+                        <h3 class="upbluhead">Netmatters End-OF-Year Staff Awards 2020</h3>
+                            <p class="updp">2020 was one of the most unique and challenging years that the buisness world has faced. Bu...</p>
+                            <a href="#header" class="btn upblubtn widthwide">READ MORE</a>
+                    </div>
                 </div>
-                <div class="upd2 card">
-                    <h3 class="uppurphead">Happy 30th birthday Matt Hurst</h3>
-                        <p class="updp">Today we celebrate Matt Hurst's 30th Birthday! Matt is one of our 3rd line IT Support Technic...</p>
-                        <a href="#header" class="readMore  uppurpbut">READ MORE</a>
+            </section>
+        </div>  
+
+        <div class="newsform">
+            <div class="content-wrapper">
+                <div class="formcontent">
+                    <h2>Email Newsletter Sign-up</h2>
+                    <form>
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required></textarea><br>
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" required></textarea><br>
+                        <input type="checkbox" id="marketing"></checkbox>
+                        <label for="marketing">Please tick this box if you wish to recieve marketing infomation from us. Please see our <u>Privacy Policy</u> for more information on how we use your data.</label>
+                    </form>
                 </div>
-                <div class="upd3 card">
-                    <h3 class="upbluhead">Netmatters End-OF-Year Staff Awards 2020</h3>
-                        <p class="updp">2020 was one of the most unique and challenging years that the buisness world has faced. Bu...</p>
-                        <a href="#header" class="readMore upblubut">READ MORE</a>
-                </div>
+
             </div>
+
         </div>
 
     </body>

@@ -1,0 +1,559 @@
+@charset "UTF-8";
+.about {
+  background-color: #333645;
+  text-align: start;
+  width: 100%;
+}
+
+.aboutContent {
+  padding: 50px 15px;
+  background-color: #333645;
+  color: #fff;
+  font-size: 16px;
+  text-align: start;
+}
+
+.aboutdesc {
+  padding: 0px 15px;
+  text-align: start;
+}
+
+.ourCult {
+  background-color: #fff;
+  color: #333645;
+}
+
+.ourCult::after {
+  content: " →";
+}
+
+.ahead {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.marginbot {
+  margin-bottom: 25px;
+}
+
+.ap1 {
+  /* margin-bottom: 25px; */
+  font-weight: 500;
+}
+
+.banner {
+  height: 70vh;
+  background-image: url("../Images/sliderplaceholder.png");
+  background-size: cover;
+}
+
+.banner-text {
+  color: white;
+}
+
+.banner_btn {
+  background-color: #926fb1;
+}
+
+.banner-section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.supBtn {
+  display: inline;
+  background-color: #4183d7;
+  padding: 5px 15px;
+  border: #f1f1f1 1px solid;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.contBtn {
+  background-color: #999aa2;
+  padding: 5px 15px;
+  border: #f1f1f1 1px solid;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+.site-logo {
+  width: 195px;
+  height: auto;
+}
+
+.headerpad {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headBtn {
+  display: none;
+}
+
+Header_buttons .supBtn {
+  display: inline;
+  background-color: #4183d7;
+  padding: 5px 15px;
+  border: #f1f1f1 1px solid;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 20px;
+}
+Header_buttons .contBtn {
+  background-color: #999aa2;
+  padding: 5px 15px;
+  border: #f1f1f1 1px solid;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+.services {
+  width: 100%;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card {
+  margin: 15px;
+  padding: 15px;
+  border: rgba(102, 102, 102, 0.4) 1px solid;
+  border-radius: 5px;
+  box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: white;
+  font-size: 13px;
+}
+
+.circback {
+  border: white 0px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+hover_functions .bSoftware:hover {
+  background-color: #67809f;
+}
+hover_functions .bSoftware:hover .besBtn:hover {
+  color: #67809f;
+  background-color: white;
+}
+hover_functions .itSup:hover {
+  background-color: #4183d7;
+}
+hover_functions .itSup:hover .itBtn {
+  color: #4183d7;
+  background-color: white;
+}
+hover_functions .digMark:hover {
+  background-color: #2ecc71;
+}
+hover_functions .digMark:hover .digBtn {
+  color: #2ecc71;
+  background-color: white;
+}
+hover_functions .teleServ:hover {
+  background-color: #d64541;
+}
+hover_functions .teleServ:hover .teleBtn {
+  color: #d64541;
+  background-color: white;
+}
+hover_functions .webDes:hover {
+  background-color: #926fb1;
+}
+hover_functions .webDes:hover .webBtn {
+  color: #926fb1;
+  background-color: white;
+}
+hover_functions .cybSec:hover {
+  background-color: #f62459;
+}
+hover_functions .cybSec:hover .cybBtn {
+  color: #f62459;
+  background-color: white;
+}
+hover_functions .devTrain:hover {
+  background-color: #926fb1;
+}
+hover_functions .devTrain:hover .devBtn {
+  color: #926fb1;
+  background-color: white;
+}
+
+button_colors .besBtn {
+  background-color: #67809f;
+}
+button_colors .itBtn {
+  background-color: #4183d7;
+}
+button_colors .digBtn {
+  background-color: #2ecc71;
+}
+button_colors .teleBtn {
+  background-color: #d64541;
+}
+button_colors .webBtn {
+  background-color: #926fb1;
+}
+button_colors .cybBtn {
+  background-color: #f62459;
+}
+button_colors .devBtn {
+  background-color: #926fb1;
+}
+
+.btn {
+  background-position-x: right;
+  display: inline;
+  padding: 5px 15px;
+  border: #f1f1f1 1px solid;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17.008px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  line-height: 35px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  overflow: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* This is the universal section of the CSS */
+body {
+  background-color: #fff;
+  overflow: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
+  height: 100%;
+}
+
+/* -------------- */
+/* The button's on the page */
+.supBtn {
+  display: inline;
+  background-color: #4183d7;
+  padding: 5px 15px;
+  border: #f1f1f1 1px solid;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.contBtn {
+  background-color: #999aa2;
+  padding: 5px 15px;
+  border: #f1f1f1 1px solid;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn {
+  background-position-x: right;
+  display: inline;
+  padding: 5px 15px;
+  border: #f1f1f1 1px solid;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17.008px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  line-height: 35px;
+}
+
+.besBtn {
+  background-color: #67809f;
+}
+
+.itBtn {
+  background-color: #4183d7;
+}
+
+.digBtn {
+  background-color: #2ecc71;
+}
+
+.teleBtn {
+  background-color: #d64541;
+}
+
+.webBtn {
+  background-color: #926fb1;
+}
+
+.cybBtn {
+  background-color: #f62459;
+}
+
+.devBtn {
+  background-color: #926fb1;
+}
+
+.outCult {
+  background-color: #fff;
+  color: #333645;
+}
+
+.upblubtn {
+  background-color: #4183d7;
+}
+
+.uppurpbtn {
+  background-color: #926fb1;
+}
+
+.banbtn {
+  background-color: #926fb1;
+}
+
+/* Banners */
+.latestContainer {
+  background-color: #fff;
+  width: 100%;
+  border-bottom: #666666 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 35px 0px;
+}
+
+.latestHeader {
+  color: #333645;
+  border-bottom: #333645 5px solid;
+  max-width: -webkit-fit-content;
+  max-width: fit-content;
+  text-align: center;
+  margin-left: 15%;
+  padding: 40px 0px;
+}
+
+/* ----------------- */
+/* Cards */
+/* .services{
+    width: 100%;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;   
+}
+
+.card{
+    margin: 15px;
+    padding: 15px;
+    border: rgba(102,102, 102, 0.4) 1px solid;
+    border-radius: 5px;
+    box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    font-size: 13px;
+} */
+/* .widthnarrow{
+    max-width: 16.5%;
+    min-width: 283px;
+}
+
+.widthwide{
+    max-width: 22%;
+    min-width: 283px;
+} */
+/* .bSoftware:hover{
+    background-color: #67809f;
+}
+
+.besBtn:hover{
+    color: #67809f;
+    background-color: white;
+}    
+
+.itSup:hover{
+    background-color: #4183d7;
+}
+
+.itBtn{
+    color: #4183d7;
+    background-color: white;
+}
+
+.digMark:hover{
+    background-color: #2ecc71;
+}
+
+.teleServ:hover{
+    background-color: #d64541;
+}
+
+.webDes:hover{
+    background-color: #926fb1;
+}
+
+.cybSec:hover{
+    background-color: #f62459;
+}
+
+.devTrain:hover{
+    background-color: #926fb1;
+} */
+/* ----------------- */
+/* Latest banner */
+/* ----------------- */
+/* about  us bits to be organised */
+.about {
+  background-color: #333645;
+  text-align: start;
+  width: 100%;
+}
+
+.aboutContent {
+  padding: 50px 15px;
+  margin: 0px 82px;
+  background-color: #333645;
+  color: #fff;
+  font-size: 16px;
+  max-width: 45%;
+  text-align: start;
+}
+
+.aboutdesc {
+  padding: 0px 15px;
+  text-align: start;
+}
+
+.ahead {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.marginbot {
+  margin-bottom: 25px;
+}
+
+.ap1 {
+  /* margin-bottom: 25px; */
+  font-weight: 500;
+}
+
+.ourCult {
+  background-color: #fff;
+  color: #333645;
+}
+
+.ourCult::after {
+  content: " →";
+}
+
+.upbluhead {
+  color: #4183d7;
+  font-size: 16px;
+}
+
+.uppurphead {
+  color: #926fb1;
+  font-size: 16px;
+}
+
+.updp {
+  font-size: 13px;
+  color: #666666;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #333645;
+  width: 100%;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+
+.navsmall {
+  font-size: 10px;
+}
+
+.navbox {
+  display: flexbox;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  color: #fff;
+  line-height: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nodec {
+  text-decoration: none;
+}
+
+.headerpad {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circback {
+  border: white 0px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.nav1:hover {
+  background-color: #926fb1;
+}
+
+/* .icon{
+    padding: 10px;
+    border-radius:100%;
+    background-color: red;
+} */
+/* ------------------ */

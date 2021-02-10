@@ -107,33 +107,6 @@ body{
 
 /* Banners */
 
-.banner{
-    height: 100%;
-    background:#fff ("../images/sliderplaceholder.png");
-    background-size: cover;
-}
-
-.banner_img{
-    width: 100%;
-    position: relative;
-    text-align: start;
-    color: black;
-} 
-
-.banner-text{
-    position: absolute;
-    bottom: 50%;
-    left: 16px;
-    color: rgba(255, 255, 255, 1);
-
-}
-
-.banner_btn{
-    position: absolute;
-    bottom: 45%;
-    left: 16px;
-}
-
 .latestContainer{
     background-color: #fff;
     width: 100%;
@@ -330,7 +303,7 @@ body{
     border: white 0px;
     padding: 10px;
     border-radius: 50%;
-
+}
 .nav1:hover{
     background-color: #926fb1;
 }

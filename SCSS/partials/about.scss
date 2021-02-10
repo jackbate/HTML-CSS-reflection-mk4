@@ -1,0 +1,41 @@
+.about{
+    background-color: #333645;
+    text-align: start;
+    width: 100%;
+}
+
+.aboutContent{
+    padding: 50px 15px;
+    background-color: #333645;
+    color: #fff;
+    font-size: 16px;
+    text-align: start;
+}
+
+.aboutdesc{
+    padding: 0px 15px;
+    text-align: start;
+}
+
+.ourCult{
+    background-color: #fff;
+    color: #333645;
+}
+
+.ourCult::after{
+    content: ' \2192';
+}
+
+.ahead{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.marginbot{
+    margin-bottom: 25px;
+}
+
+.ap1{
+    /* margin-bottom: 25px; */
+    font-weight: 500;
+}
