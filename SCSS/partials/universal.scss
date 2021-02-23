@@ -29,8 +29,3 @@ body{
     overflow: auto;
     font-family: 'Poppins', sans-serif;
 }
-
-@mixin flexbox {
-    display: -ms-flexbox;
-    display: flex;
-  }

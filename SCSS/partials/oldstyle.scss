@@ -1,7 +1,7 @@
 /* This is the universal section of the CSS */
 
 body{
-    background-color: #fff;
+    background-color: $secondary;
     overflow: auto;
     font-family: 'Poppins', sans-serif;
 }
@@ -23,11 +23,11 @@ body{
 /* The button's on the page */
 .supBtn{
     display: inline;
-    background-color: #4183d7;
+    background-color: $blue2;
     padding: 5px 15px;
-    border: #f1f1f1 1px solid;
+    border: $offwhite 1px solid;
     border-radius: 3px;
-    color: #fff;
+    color: $secondary;
     text-decoration: none;
     font-size: 18px;
     text-align: center;
@@ -35,11 +35,11 @@ body{
 }
 
 .contBtn{
-    background-color: #999aa2;
+    background-color: $lightgrey2;
     padding: 5px 15px;
-    border: #f1f1f1 1px solid;
+    border: $offwhite 1px solid;
     border-radius: 3px;
-    color: #fff;
+    color: $secondary;
     text-decoration: none;
     font-size: 18px;
     text-align: center;
@@ -49,9 +49,9 @@ body{
     background-position-x: right;
     display: inline;
     padding: 5px 15px;
-    border: #f1f1f1 1px solid;
+    border: $offwhite 1px solid;
     border-radius: 3px;
-    color: #fff;
+    color: $secondary;
     text-decoration: none;
     font-size: 17.008px;
     text-align: center;
@@ -61,62 +61,62 @@ body{
 
 
 .besBtn{
-    background-color: #67809f;
+    background-color: $blue1;
 }
 
 .itBtn{
-    background-color: #4183d7;
+    background-color: $blue2;
 }
 
 .digBtn{
-    background-color: #2ecc71;
+    background-color: $green;
 }
 
 .teleBtn{
-    background-color: #d64541;
+    background-color: $red1;
 }
 
 .webBtn{
-    background-color: #926fb1;
+    background-color: $primary;
 }
 
 .cybBtn{
-    background-color: #f62459;
+    background-color: $red2;
 }
 
 .devBtn{
-    background-color: #926fb1;
+    background-color: $primary;
 }
 
 .outCult{
-    background-color: #fff;
-    color: #333645;
+    background-color: $secondary;
+    color: $grey;
 }
 
 .upblubtn{
-    background-color: #4183d7;
+    background-color: $blue2;
 }
 
 .uppurpbtn{
-    background-color: #926fb1;
+    background-color: $primary;
 }
 
 .banbtn{
-    background-color: #926fb1;
+    background-color: $primary;
 }
 
 /* Banners */
 
 .latestContainer{
-    background-color: #fff;
+    background-color: $secondary;
     width: 100%;
-    border-bottom: #666666 1px solid;
+    border-bottom: $lightgrey 1px solid;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 35px 0px;
 }
 
 .latestHeader{
-    color: #333645;
-    border-bottom: #333645 5px solid;
+    color: $grey;
+    border-bottom: $grey 5px solid;
     max-width: fit-content;
     text-align: center;
     margin-left: 15%;
@@ -159,43 +159,43 @@ body{
     min-width: 283px;
 } */
 
-/* .bSoftware:hover{
-    background-color: #67809f;
-}
+// .bSoftware:hover{
+//     background-color: $blue1;
+// }
 
-.besBtn:hover{
-    color: #67809f;
-    background-color: white;
-}    
+// .besBtn:hover{
+//     color: $blue1;
+//     background-color: $secondary;
+// }    
 
-.itSup:hover{
-    background-color: #4183d7;
-}
+// .itSup:hover{
+//     background-color: $blue2;
+// }
 
-.itBtn{
-    color: #4183d7;
-    background-color: white;
-}
+// .itBtn{
+//     color: $blue2;
+//     background-color: $secondary;
+// }
 
-.digMark:hover{
-    background-color: #2ecc71;
-}
+// .digMark:hover{
+//     background-color: $green;
+// }
 
-.teleServ:hover{
-    background-color: #d64541;
-}
+// .teleServ:hover{
+//     background-color: $red1;
+// }
 
-.webDes:hover{
-    background-color: #926fb1;
-}
+// .webDes:hover{
+//     background-color: $primary;
+// }
 
-.cybSec:hover{
-    background-color: #f62459;
-}
+// .cybSec:hover{
+//     background-color: $red2;
+// }
 
-.devTrain:hover{
-    background-color: #926fb1;
-} */
+// .devTrain:hover{
+//     background-color: $primary;
+// }
 
 /* ----------------- */
 /* Latest banner */
@@ -205,7 +205,7 @@ body{
 
 /* about  us bits to be organised */
 .about{
-    background-color: #333645;
+    background-color: $grey;
     text-align: start;
     width: 100%;
 }
@@ -213,8 +213,8 @@ body{
 .aboutContent{
     padding: 50px 15px;
     margin: 0px 82px;
-    background-color: #333645;
-    color: #fff;
+    background-color: $grey;
+    color: $secondary;
     font-size: 16px;
     max-width: 45%;
     text-align: start;
@@ -240,8 +240,8 @@ body{
 }
 
 .ourCult{
-    background-color: #fff;
-    color: #333645;
+    background-color: $secondary;
+    color: $grey;
 }
 
 .ourCult::after{
@@ -249,18 +249,18 @@ body{
 }
 
 .upbluhead{
-    color: #4183d7;
+    color: $blue2;
     font-size: 16px;
 }
 
 .uppurphead{
-    color: #926fb1;
+    color: $primary;
     font-size: 16px;
 }
 
 .updp{
     font-size: 13px;
-    color: #666666;
+    color: $lightgrey;
 }
 
 
@@ -273,7 +273,7 @@ body{
     display: flex;
     border-left: 1px solid black;
     border-right: 1px solid black ;
-    color: #fff;
+    color: $secondary;
     line-height: 5px;
     justify-content: center;
     align-items: center;
@@ -292,12 +292,12 @@ body{
 }
 
 .circback{
-    border: white 0px;
+    border: $secondary 0px;
     padding: 10px;
     border-radius: 50%;
 }
 .nav1:hover{
-    background-color: #926fb1;
+    background-color: $primary;
 }
 
 
