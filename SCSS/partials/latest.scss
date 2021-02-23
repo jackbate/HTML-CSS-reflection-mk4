@@ -1,0 +1,18 @@
+.img{
+    &-upd1{
+        background: $secondary url("../../Images/upd1-img.jpg") no-repeat center; 
+    }
+    &-upd2{
+        background: $secondary url("../../Images/upd2-img.jpg") no-repeat center; 
+    }
+    &-upd3{
+        background: $secondary url("../../Images/upd3-img.jpg") no-repeat center; 
+    }
+    &-des{
+        width: 100%;
+        background-repeat: no-repeat;
+        padding-top: 68%;
+        background-size: cover;
+        background-position: 50%;
+    }
+}

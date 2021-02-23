@@ -13,15 +13,14 @@
 }
 
 .content-wrapper {
-    display: -ms-flexbox;
-    display: flex;
+    @include flexbox;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    margin: 0px 20px;
+    margin: 0px 15px;
     height: 100%;
 }
 
@@ -30,3 +29,8 @@ body{
     overflow: auto;
     font-family: 'Poppins', sans-serif;
 }
+
+@mixin flexbox {
+    display: -ms-flexbox;
+    display: flex;
+  }
