@@ -22,11 +22,23 @@
 }
 
 .circback{
-    border: white 0px;
-    padding: 10px;
+    border: $secondary 0px;
+    padding: 15px;
     border-radius: 50%;
 }
 
+.width{
+    &-1{
+        @media (min-width: map-get($breakpoints, 'l')) {
+            max-width: 33%;
+          }
+    }
+    &-2{
+        @media (min-width: map-get($breakpoints, 'l')) {
+            max-width: 25%;
+          } 
+    }
+}
 
 
 hover_functions{
@@ -90,30 +102,33 @@ hover_functions{
 
 button_colors{
     .besBtn{
-        background-color: #67809f;
+        background-color: $blue1;
     }
-
+    
     .itBtn{
-        background-color: #4183d7;
+        background-color: $blue2;
     }
-
+    
     .digBtn{
-        background-color: #2ecc71;
+        background-color: $green;
     }
-
+    
     .teleBtn{
-        background-color: #d64541;
+        background-color: $red1;
     }
-
+    
     .webBtn{
-        background-color: #926fb1;
+        background-color: $primary;
     }
-
+    
     .cybBtn{
-        background-color: #f62459;
+        background-color: $red2;
+    }
+    
+    .devBtn{
+        background-color: $primary;
     }
 
-    .devBtn{
-        background-color: #926fb1;
-    }
 }
+
+

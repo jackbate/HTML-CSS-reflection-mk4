@@ -1,13 +1,13 @@
 .about{
-    background-color: #333645;
+    background-color: $grey;
     text-align: start;
     width: 100%;
 }
 
 .aboutContent{
     padding: 50px 15px;
-    background-color: #333645;
-    color: #fff;
+    background-color: $grey;
+    color: $secondary;
     font-size: 16px;
     text-align: start;
 }
@@ -17,9 +17,9 @@
     text-align: start;
 }
 
-.ourCult{
-    background-color: #fff;
-    color: #333645;
+.outCult{
+    background-color: $secondary;
+    color: $grey;
 }
 
 .ourCult::after{
@@ -36,6 +36,14 @@
 }
 
 .ap1{
-    /* margin-bottom: 25px; */
     font-weight: 500;
+}
+buttons{
+    .upblubtn{
+        background-color: $blue2;
+    }
+
+    .uppurpbtn{
+        background-color: $primary;
+    }
 }

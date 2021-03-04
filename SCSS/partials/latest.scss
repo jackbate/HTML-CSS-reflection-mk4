@@ -1,3 +1,19 @@
+.latestContainer{
+    background-color: $secondary;
+    width: 100%;
+    border-bottom: $lightgrey 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 35px 0px;
+}
+
+.latestHeader{
+    color: $grey;
+    border-bottom: $grey 5px solid;
+    max-width: fit-content;
+    text-align: center;
+    margin-left: 15%;
+    padding: 40px 0px;
+}
+
 .img{
     &-upd1{
         background: $white url("../Images/upd1-img.jpg") no-repeat center; 
@@ -17,3 +33,29 @@
     }
 }
 
+.upbluhead{
+    color: $blue2;
+    font-size: 16px;
+}
+
+.uppurphead{
+    color: $primary;
+    font-size: 16px;
+}
+
+.updp{
+    font-size: 13px;
+    color: $lightgrey;
+}
+
+.flex{
+    &-direction{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.cards{
+    &-decoration{
+        border: 1px $primary solid;
+}

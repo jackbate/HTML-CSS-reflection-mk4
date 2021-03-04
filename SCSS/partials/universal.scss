@@ -2,16 +2,15 @@
     background-position-x: right;
     display: inline;
     padding: 5px 15px;
-    border: #f1f1f1 1px solid;
+    border: $offwhite 1px solid;
     border-radius: 3px;
-    color: #fff;
+    color: $secondary;
     text-decoration: none;
     font-size: 17.008px;
     text-align: center;
     letter-spacing: 0.4px;
     line-height: 35px;
 }
-
 .content-wrapper {
     @include flexbox;
     -ms-flex-flow: row wrap;
@@ -25,7 +24,11 @@
 }
 
 body{
-    background-color: #fff;
+    background-color: $secondarys;
     overflow: auto;
     font-family: 'Poppins', sans-serif;
+}
+
+.nodec{
+    text-decoration: none;
 }

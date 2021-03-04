@@ -1,24 +1,59 @@
 .img{
+    &-change1bw{
+      display: block;
+    }
+    &-change1bw:hover{
+        display: none;
+    }
     &-change1{
-        
+        display: none;
+    }
+    &-change1:hover{
+        display: block;
+    }
+    &-change2bw{
+        display: block;
+    }
+    &-change2bw:hover{
+        display: none;
     }
     &-change2{
-
+        display: none;
+    }
+    &-change2:hover{
+        display: block;
+    }
+    &-change3bw{
+    display: block;
+    }
+    &-change3bw:hover{
+        display: none;
     }
     &-change3{
-
+        display: none;
+    }
+    &-change3:hover{
+        display: block;
+    }
+    &-change4bw{
+        display: block;
+    }
+    &-change4bw:hover{
+        display: none;
     }
     &-change4{
-
+        display: none;
+    }
+    &-change4:hover{
+        display: block;
     }
 }
 
 .logo{
     &-background{
-
+        display: none;
     }
     &-flex{
-       display: flex;
        flex-direction: row;
     }
 }
