@@ -12,3 +12,17 @@
 .newsform{
     background: $lightgrey;
 }
+
+.form{
+    &-background{
+        background-color: #ddd;
+    }
+    &-content{
+        display: flex;
+        flex-direction: column;
+    }
+    &-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

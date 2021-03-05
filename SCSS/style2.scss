@@ -1,14 +1,20 @@
-@import "partials/about.scss",
- "partials/banner.scss",
-  "partials/header.scss",
-   "partials/latest.scss",
-    "partials/navbar.scss",
-     "partials/services.scss",
-      "partials/universal.scss",
-      "partials/oldstyle.scss",
-      "partials/form.scss",
-      "partials/breakpoints.scss",
-      "partials/colours.scss",
-      "partials/logos.scss",
-      "partials/flexbox.scss",
-      "partials/footer.scss";
+@import "partials/colours.scss",
+"partials/flexbox.scss",
+"partials/breakpoints.scss",
+"partials/mixins.scss",
+"partials/about.scss",
+"partials/banner.scss",
+"partials/header.scss",
+"partials/latest.scss",
+"partials/navbar.scss",
+"partials/services.scss",
+"partials/universal.scss",
+"partials/form.scss",
+"partials/logos.scss",
+"partials/footer.scss";
+// "partials/mixins.scss";
+      
+
+    // * {
+    //     border: 1px red;
+    // }

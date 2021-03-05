@@ -1,0 +1,150 @@
+.services{
+    width: calc(100vw - 18px);
+
+    .content-wrapper {
+        .flexbox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;   
+
+            [class*=card_] {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-content: space-between;
+                width: 100%;
+                padding: 30px;
+                margin-top: 30px;
+                font-size: 13px;
+                border: rgba(102,102, 102, 0.4) 1px solid;
+                border-radius: 5px;
+                text-align: center;
+
+                i {
+                    display: block;
+                    font-size: 20px;
+                    line-height: 50px;
+                    width: 50px;
+                    height: 50px;
+                    // color: white;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                }
+
+                .icon_underline {
+                    // content: "";
+                    background-color: $grey;
+                    width: 30px;
+                    height: 3px;
+                    margin: 20px auto 0;
+                }
+                
+                h3, p {
+                    color: $grey;
+                }
+
+                a {
+                    display: block;
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 129px;
+                    height: 46px;
+                    line-height: 46px;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    margin: 0 auto;
+                    font-size: 17px;
+                }
+                
+                &:hover {
+                    i, a, .icon_underline {
+                        background-color: white;
+                    }
+
+                    h3, p {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 750px = 768px - 18px(scrollbar width)
+@media (min-width: 768px) {
+    .services {
+        .content-wrapper {
+            // border: solid 1px red;
+            width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .flexbox {
+                flex-direction: row;
+                justify-content: space-between;
+                align-content: top;
+
+                .card_web,
+                .card_telecoms,
+                .card_cybers {
+                    width: 345px;
+                    height: 309px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 993px) {
+    .services {
+        .content-wrapper {
+            width: 975px;
+
+            .flexbox {
+
+                .card_bespoke,
+                .card_it,
+                .card_digital {
+                    width: 293px;
+                    height: 351px;
+                }
+    
+                .card_web,
+                .card_telecoms,
+                .card_cybers {
+                    width: 455px;
+                    height: 287px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1218px) {
+    .services {
+        .content-wrapper {
+            width: 1200px;
+
+            .flexbox {
+
+                .card_bespoke,
+                .card_it,
+                .card_digital {
+                    width: 370px;
+                    height: 309px;
+                }
+    
+                .card_web,
+                .card_telecoms,
+                .card_cybers {
+                    width: 270px;
+                    height: 309px;
+                }
+            }
+        }
+    }
+}

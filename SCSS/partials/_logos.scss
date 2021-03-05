@@ -24,7 +24,7 @@
         display: block;
     }
     &-change3bw{
-    display: block;
+        display: block;
     }
     &-change3bw:hover{
         display: none;
@@ -51,9 +51,12 @@
 
 .logo{
     &-background{
-        display: none;
+        padding: 50px;
+        box-shadow: inset 0px 20px 19px rgba(102,102,102,0.09);
     }
     &-flex{
-       flex-direction: row;
+        @include flexbox;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }

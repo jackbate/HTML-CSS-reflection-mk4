@@ -4,6 +4,10 @@
 // Mixins used for Flexbox to ensure cross-browser (IE) compatibility
 // Adapted from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mixins
 
+* {
+  box-sizing: border-box;
+}
+
 // Flex containers:
 @mixin flexbox {
     display: -ms-flexbox;

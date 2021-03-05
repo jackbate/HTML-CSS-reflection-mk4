@@ -1,0 +1,24 @@
+
+//    web    #926fb1    #79539a
+@each $name, $color, $hover_color in $colours {
+    .card_#{$name} {
+            i { 
+                color: white;
+                background-color: $color
+            }
+    
+            a {
+                color: white;
+                background-color: $color;
+            }
+
+        &:hover {
+            background-color: $color;
+
+            i, a {
+                color: $color;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,98 @@
+
+footer{
+    background-color: $grey;
+}
+
+.footer{
+    &-content{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        justify-content: space-evenly;
+        padding: 47px 0px 43px;
+    }
+    &-contact{
+        padding: 0px 15px;
+    }
+    &-about{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px;
+        &-dec{
+            text-decoration: none;
+            color: white;
+            line-height: 1.375rem;
+        }
+    }
+    &-site{
+        text-decoration: none;
+        padding: 0px 15px;
+
+    }
+    &-social{
+        margin: 10px;
+        padding: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        &-facebook{
+            background: transparent;
+            margin-top: 30px;
+            background-color: rgba(0, 0, 0, .25);
+            display: block;
+            font-size: 1.75rem;
+            line-height: 3.438rem;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            &:hover{
+                background-color: #3b5998;
+            }
+        }
+
+        &-twitter{
+            background: transparent;
+            margin-top: 30px;
+            background-color: rgba(0, 0, 0, .25);
+            display: block;
+            font-size: 1.75rem;
+            line-height: 3.438rem;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            &:hover{
+                background-color: #1DA1F2;
+            }
+        }
+        &-linkedin{
+            background: transparent;
+            margin-top: 30px;
+            background-color: rgba(0, 0, 0, .25);
+            display: block;
+            font-size: 1.75rem;
+            line-height: 3.438rem;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            &:hover{
+                background-color: #0072b1;
+            }
+        }
+    }
+    &sbutton{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    &-list{
+        list-style-type: none;
+        padding: 0px;
+    }
+}
+
+.icon{
+    &-des{
+        padding: 10px;
+        margin: 10px;
+    }
+}

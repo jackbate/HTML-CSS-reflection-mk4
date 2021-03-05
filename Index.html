@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Home | Netmatters">
@@ -8,7 +8,7 @@
 
         <title>Home| Netmatters</title>
         <!-- Link to stylesheet -->
-        <link rel="stylesheet" type="text/css" href="CSS/style2.css">
+        <link rel="stylesheet" type="text/css" href="SCSS/style2.css">
 
         <!-- This is the link to google fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,9 +23,9 @@
         
         <header>
             <div class="content-wrapper">
-                <div class="headerpad">
+                <div class="1headerpad">
                     <div class="site-logo">
-                    <a href="#header"><img src="../HTML: CSS reflection mk2/Images/Netmatterslogo.png" alt="Netmatters Logo"></a>
+                    <a href="#header"><img src="./Images/Netmatterslogo.png" alt="Netmatters Logo"></a>
                     </div>
                     <!-- This is going to be the two buttons for the support and contact buttons at the top of the page -->
                     <div class="headBtn">
@@ -103,47 +103,54 @@
         <div class="services">
             <div class="content-wrapper">
                 <div class="flexbox">
-                    <div class="card bSoftware width-1">
-                        <i class="fab fa-uncharted fa-2x circback  besBtn"></i>
-                        <h3 class="lightfw">Bespoke Software</h3>
+                    <div class="card_bespoke">
+                        <i class="fab fa-uncharted circback"></i>
+                        <div class="icon_underline"></div>
+                        <h3>Bespoke Software</h3>
                         <p>Tailored software solutions to improve buisness productivity and online profits. Our expert team will ensure a software soltion.</p>
-                        <a href="#" class="btn besBtn">READ MORE</a>
+                        <a href="#">READ MORE</a>
                     </div>
-                    <div class="card itSup width-1">
+                    <div class="card_it">
                         <i class="fas fa-desktop fa-2x circback itBtn"></i>
-                        <h3 class="lightfw">IT Support</h3>
+                        <div class="icon_underline"></div>
+                        <h3 >IT Support</h3>
                         <p>Remotely managed IT services that is catered to your business needs, adds value and reduces cost.</p>
-                        <a href="#" class="btn itBtn">READ MORE</a>
+                        <a href="#">READ MORE</a>
                     </div>
-                    <div class="card digMark width-1">
+                    <div class="card_digital">
                         <i class="far fa-chart-bar fa-2x circback digBtn"></i>
-                        <h3 class="lightfw">Digital Marketing</h3>
+                        <div class="icon_underline"></div>
+                        <h3 >Digital Marketing</h3>
                         <p>Driving brand awareness and ROI through creative digital marketing campaings. We review and monitor onlune performances.</p>
-                        <a href="#" class="btn digBtn">READ MORE</a>
+                        <a href="#">READ MORE</a>
                     </div>
-                    <div class="card teleServ width-2">
+                    <div class="card_telecoms">
                         <i class="fas fa-phone-alt fa-2x circback teleBtn"></i>
-                        <h3 class="lightfw">Telecoms Services</h3>
+                        <div class="icon_underline"></div>
+                        <h3 >Telecoms Services</h3>
                         <P>Stay connected with bespoke telecoms solutions when you need it most.</P>
-                        <a href="#" class="btn teleBtn">READ MORE</a>
+                        <a href="#">READ MORE</a>
                     </div>
-                    <div class="card webDes width-2">
+                    <div class="card_web">
                         <i class="fas fa-code fa-2x circback webBtn"></i>
-                        <h3 class="lightfw">Web Design</h3>
+                        <div class="icon_underline"></div>
+                        <h3 >Web Design</h3>
                         <p>User-centric design for buisnesses looking to make a lasting impression.</p>
-                        <a href="#" class="btn webBtn">READ MORE</a>
+                        <a href="#">READ MORE</a>
                     </div>
-                    <div class="card cybSec width-2">
+                    <div class="card_cybers">
                         <i class="fas fa-shield-alt fa-2x circback cybBtn"></i>
-                        <h3 class="lightfw">Cyber Security</h3>
+                        <div class="icon_underline"></div>
+                        <h3 >Cyber Security</h3>
                         <p>Ensruing your online buisness stay's secure 24/7, 265 days of the year.</p>
-                        <a href="#" class="btn cybBtn">READ MORE</a>
+                        <a href="#">READ MORE</a>
                     </div>
-                    <div class="card devTrain width-2">
+                    <div class="card_web">
                         <i class="fas fa-graduation-cap fa-2x circback devBtn"></i>
-                        <h3 class="lightfw">Developer Training</h3>
+                        <div class="icon_underline"></div>
+                        <h3 >Developer Training</h3>
                         <p>Have you considered a career in web development but you aren't sure where to start?</p>
-                        <a href="#" class="btn devBtn">READ MORE</a>
+                        <a href="#">READ MORE</a>
                     </div>
                 </div>
             </div>  
@@ -202,30 +209,34 @@
             </section>
         </div>   -->
 
+
         <section class="cards-container">
-            <div class="content-wrapper">
+            <div class="cards-inner">
                 <div class="flex-direction">
-                  <div class="cards-decoration width1-query">
-                    <div class="img-recruit img-card"></div>
-                    <h2 class="cards-title prpur">Apprentice Recruitment</h2>
-                    <p class="cards-text">We support buisnesses every step of the way when recruiting apprentices.</p>
-                    <a href="#header" class="btn upblubtn widthwide">READ MORE</a>
+                  <div class="cards-decoration cards-des">
+                    <div class="img-upd1 img-card"></div>
+                    <h2 class="cards-title">Lorem ipsum</h2>
+                    <p class="cards-text">Sed in felis sed dui efficitur laoreet in vel turpis.</p>
                   </div>
-                  <div class="cards-decoration width1-query">
+                  <div class="cards-decoration">
                     <div class="img-international img-card"></div>
-                    <h2 class="cards-title">International Work Placements</h2>
-                    <p class="cards-text">Students from a range of countries stay im Norwich to complete work placements in a variety of sectors.</p>
-                    <a href="#header" class="btn  uppurpbtn widthwide">READ MORE</a>
+                    <h2 class="cards-title">Lorem ipsum</h2>
+                    <p class="cards-text">Etiam dignissim sapien ullamcorper lacinia tempor.</p>
                   </div>
-                  <div class="cards-decoration width2-query">
+                  <div class="cards-decoration">
                     <div class="img-bespoke img-card"></div>
-                    <h2 class="cards-title">Bespoke Support</h2>
-                    <p class="cards-text">Individually tailored support for those applying for work or who are already in work but may be struggling.</p>
-                    <a href="#header" class="btn upblubtn widthwide">READ MORE</a>
+                    <h2 class="cards-title">Lorem ipsum</h2>
+                    <p class="cards-text">Etiam dignissim sapien ullamcorper lacinia tempor.</p>
                   </div>
                 </div>
             </div>
           </section>
+
+        <section class="news_card_container">
+            <div class="news_card_width_container">
+                
+            </div>
+        </section>
 
         <section class="logo-background">
             <div class="content-wrapper">
@@ -239,8 +250,8 @@
                         <img src="Images/logo2.png" id="logo2" class="img-change2">
                     </div>
                     <div>
-                        <img src="Images/logo3-bw.jpg" id="logo3" class="img-change3bw">
-                        <img src="Images/logo3.png" id="logo3" class="img-chnage3">
+                        <img src="Images/logo3-bw.jpg" id="logo3bw" class="img-change3bw">
+                        <img src="Images/logo3.png" id="logo3" class="img-change3">
                     </div>
                     <div>
                         <img src="Images/logo4-bw.jpg" id="logo4bw" class="img-change4bw">
@@ -254,23 +265,25 @@
             <div class="content-wrapper">
                 <div class="form-content">
                     <h2>Email Newsletter Sign-up</h2>
+                    <div class="form-wrapper">
                     <form>
                         <div class="user_name">
                             <label for="name">Your Name</label>
-                            <input type="text" id="name" required class=""></textarea><br>
+                            <input type="text" id="name" required class="" class=""></textarea><br>
                         </div>
                         <div class="user_email">
                             <label for="email">Your Email</label>
-                            <input type="email" id="email" required class=""></textarea><br>
+                            <input type="email" id="email" required class="" class=""></textarea><br>
                         </div>
                         <div class="user_checkbox">
                             <input type="checkbox" id="marketing" class=""></checkbox>
                             <label for="marketing">Please tick this box if you wish to recieve marketing infomation from us. Please see our <u>Privacy Policy</u> for more information on how we use your data.</label>
                         </div>
                         <div>
-                            <input type="submit" value="Subscribe"></input>
+                            <input type="submit" value="Subscribe" class=""></input>
                         </div>
                     </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -280,34 +293,46 @@
                 <div class="footer-content">
                     <div class="footer-contact">
                         <h4>Contact Us</h4>
-                        <p>11 Penfold Drive</p>
-                        <p>Norfolk</p>
-                        <p>NR18 0WZ</p><br>
-                        <p>Tel:<a>01603 70 40 20</a></p>
-                        <p>Email:<a>support@netmatters.com</a></p>
+                        <ul class="footer-list">
+                            <li>11 Penfold Drive</li>
+                            <li>Wymondham</li>
+                            <li>Norfolk</li>
+                            <li>NR18 0WZ</li>
+                            <li>&nbsp;</li>
+                            <li>Tel: <a href="tel:01603704020" class="footer-about-dec">01603 70 40 20</a></li>
+                            <li>Email: <a href="mailto:support@netmatters.com" class="footer-about-dec">support@netmatters.com</a></li>
+                        </ul>
                     </div>
                     <div class="footer-about">
                         <h4>About Netmatters</h4>
-                        <a href="#">News</a>
-                        <a href="#">Our Careers</a>
-                        <a href="#">Our Team</a>
-                        <a href="#">Our Office Tour</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Cookie Policy</a>
-                        <a href="#">Terms & Conditions</a>
-                        <a href="#">UK Domains</a>
+                        <a href="#" class="footer-about-dec">News</a>
+                        <a href="#" class="footer-about-dec">Our Careers</a>
+                        <a href="#" class="footer-about-dec">Our Team</a>
+                        <a href="#" class="footer-about-dec">Our Office Tour</a>
+                        <a href="#" class="footer-about-dec">Privacy Policy</a>
+                        <a href="#" class="footer-about-dec">Cookie Policy</a>
+                        <a href="#" class="footer-about-dec">Terms & Conditions</a>
+                        <a href="#" class="footer-about-dec">UK Domains</a>
                     </div>
                     <div class="footer-site">
                         <h4>website</h4>
-                        <a href="#"> sitemap</a>
+                        <a href="#" class="footer-about-dec"> sitemap</a>
                         <p>© Copyright Netmatters Ltd. 2021</p>
                         <p>All Rights Reserved</p>
                     </div>
                     <div class="footer-social">
                         <h4>Social Media</h4>
-                        <i class="fab fa-facebook-f fa-2x"></i>
-                        <i class="fab fa-twitter fa-2x"></i>
-                        <i class="fab fa-linkedin-in fa-2x"></i>
+                        <div class="footer-sbutton">
+                            <a href="#" class="footer-social-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="footer-social-twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="footer-social-linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
