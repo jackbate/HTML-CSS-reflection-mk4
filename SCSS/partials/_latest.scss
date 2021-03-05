@@ -1,3 +1,8 @@
+
+
+// #region
+
+
 .latestContainer{
     background-color: $secondary;
     width: 100%;
@@ -14,97 +19,186 @@
     padding: 30px 0px;
 }
 
-.img{
-    &-upd1{
-        background: $secondary url("../Images/upd1-img.jpg") no-repeat center; 
-    }
-    &-upd2{
-        background: $secondary url("../Images/upd2-img.jpg") no-repeat center; 
-    }
-    &-upd3{
-        background: $secondary url("../Images/upd3-img.jpg") no-repeat center; 
-    }
-    &-des{
-        width: 100%;
-        background-repeat: no-repeat;
-        padding-top: 68%;
-        background-size: cover;
-        background-position: 50%;
-    }
-}
-
-.upbluhead{
-    color: $blue2;
-    font-size: 16px;
-}
-
-.uppurphead{
-    color: $primary;
-    font-size: 16px;
-}
-
-.updp{
-    font-size: 13px;
-    color: $lightgrey;
-}
-
-.flex{
-    &-direction{
-        display: flex;
-        flex-direction: row;
-    }
-}
+// // .cards{
+// //     &-decoration{
+// //         border: 1px $primary solid;
+// //     }
+// // }
 
 // .cards{
-//     &-decoration{
-//         border: 1px $primary solid;
+//     &-container{
+//       padding: 50px 0px;
+//       box-shadow: inset 0px 0px 20px 19px rgba(102,102,102,0.05)
 //     }
+//     &-inner{
+//       @include set-content-width;
+//       margin: 0 auto;
+//       padding: 0 15px;
+//       border: 1px solid transparent;
+//     }
+//     &-decoration{
+//       @include flexbox;
+//       flex-direction: column;
+//       text-align: center;
+//       border: 1px #f1f1f1 solid;
+//       margin: 15px auto;
+//       background-color: $secondary;
+//     }
+//     &-text{
+//       font-size: 0.675rem;
+//       padding: 10px;
+//     }
+//     &-title{
+//       font-size: 1rem;
+//       color: $primary;
+//     }
+//   }
+
+//   .img{
+//     &-card{
+//         width: 100%;
+//         background-repeat: no-repeat;
+//         padding-top: 68%;
+//         background-size: cover;
+//         background-position: 50%;
+//     }
+//    &-recruit{
+//        background: $secondary url("../../Images/upd1-img.jpg") no-repeat center;
+//    }
+//    &-international{
+//        background: $secondary url("../../Images/upd2-img.jpg") no-repeat center;
+//    }
+//    &-bespoke{
+//        background: $secondary url("../../Images/upd3-img.jpg") no-repeat center;
+//    }
 // }
 
-.cards{
-    &-container{
-      padding: 50px 0px;
-      box-shadow: inset 0px 0px 20px 19px rgba(102,102,102,0.05)
-    }
-    &-inner{
-      @include set-content-width;
-      margin: 0 auto;
-      padding: 0 15px;
-      border: 1px solid transparent;
-    }
-    &-decoration{
-      @include flexbox;
-      flex-direction: column;
-      text-align: center;
-      border: 1px #f1f1f1 solid;
-      margin: 15px auto;
-      background-color: $secondary;
-    }
-    &-text{
-      font-size: 0.675rem;
-      padding: 10px;
-    }
-    &-title{
-      font-size: 1rem;
-      color: $primary;
-    }
-  }
+//#endregion
 
-  .img{
-    &-card{
-        width: 100%;
-        background-repeat: no-repeat;
-        padding-top: 68%;
-        background-size: cover;
-        background-position: 50%;
+.news_card_container {
+
+    .news_card_width_container {
+        padding: 0 20px;
+
+        [class*=news_] {
+            margin-top: 30px;
+            border-radius: 10px;
+            border: solid 1px $lightgrey;
+
+            .image_container {
+                overflow: hidden;
+
+                img {
+                    border-top-left-radius: 11px;
+                    border-top-right-radius: 11px;
+                    width: 100%;
+                }
+            }
+
+            .text_container {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+
+                h3 {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                p {
+                    color: $lightgrey;
+                    margin-bottom: 30px;
+                }
+
+                a {
+                    width: 110px;
+                    text-decoration: none;
+                    // display: block;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 10px;
+                    border-radius: 2px;
+                    // background-color: grey;
+                }
+
+                .text_underline{
+                    height: 1px;
+                    width: 100%;
+                    margin: 30px 0px;
+                    background-color: $lightgrey;
+                }
+                .publish_information{
+                    display: flex;
+                    flex-direction: row;
+                    // justify-content: space-between;
+                    img {
+                        max-width: 50px;
+                        max-height: 50px;
+                        margin-right: 20px;
+                    }
+
+                    & > div {
+                        h4 {
+                            margin: 0px 0px 10px;
+                            padding: 0;
+
+                        }
+                        p {
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                    
+                }
+            }
+        }
     }
-   &-recruit{
-       background: $secondary url("../../Images/upd1-img.jpg") no-repeat center;
-   }
-   &-international{
-       background: $secondary url("../../Images/upd2-img.jpg") no-repeat center;
-   }
-   &-bespoke{
-       background: $secondary url("../../Images/upd3-img.jpg") no-repeat center;
-   }
+}
+
+@media (min-width: 768px) {
+    .news_card_container {
+        .news_card_width_container {
+            margin: 0 auto;
+            width: 750px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            [class*=news_] {
+                width: 348px;
+            }
+
+            [class*=news_]:last-of-type {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 993px) {
+    .news_card_container{
+        .news_card_width_container{
+            width: 975px;
+
+            [class*=news_]{
+                width: 300px;
+            }
+
+            [class*=news_]:last-of-type{
+                display: block;
+            }
+        }
+    }
+}
+
+@media (min-width: 1218px) {
+    .news_card_container{
+        .news_card_width_container{
+            width: 1200px;
+
+            [class*=news_]{
+                width: 380px;
+            }
+        }
+    }
 }

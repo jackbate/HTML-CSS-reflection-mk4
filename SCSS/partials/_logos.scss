@@ -1,62 +1,141 @@
-.img{
-    &-change1bw{
-      display: block;
-    }
-    &-change1bw:hover{
-        display: none;
-    }
-    &-change1{
-        display: none;
-    }
-    &-change1:hover{
-        display: block;
-    }
-    &-change2bw{
-        display: block;
-    }
-    &-change2bw:hover{
-        display: none;
-    }
-    &-change2{
-        display: none;
-    }
-    &-change2:hover{
-        display: block;
-    }
-    &-change3bw{
-        display: block;
-    }
-    &-change3bw:hover{
-        display: none;
-    }
-    &-change3{
-        display: none;
-    }
-    &-change3:hover{
-        display: block;
-    }
-    &-change4bw{
-        display: block;
-    }
-    &-change4bw:hover{
-        display: none;
-    }
-    &-change4{
-        display: none;
-    }
-    &-change4:hover{
-        display: block;
-    }
-}
+// .img{
+//     &-change1bw{
+//       display: block;
+//     }
+//     &-change1bw:hover{
+//         display: none;
+//     }
+//     &-change1{
+//         display: none;
+//     }
+//     &-change1:hover{
+//         display: block;
+//     }
+//     &-change2bw{
+//         display: block;
+//     }
+//     &-change2bw:hover{
+//         display: none;
+//     }
+//     &-change2{
+//         display: none;
+//     }
+//     &-change2:hover{
+//         display: block;
+//     }
+//     &-change3bw{
+//         display: block;
+//     }
+//     &-change3bw:hover{
+//         display: none;
+//     }
+//     &-change3{
+//         display: none;
+//     }
+//     &-change3:hover{
+//         display: block;
+//     }
+//     &-change4bw{
+//         display: block;
+//     }
+//     &-change4bw:hover{
+//         display: none;
+//     }
+//     &-change4{
+//         display: none;
+//     }
+//     &-change4:hover{
+//         display: block;
+//     }
+// }
 
 .logo{
     &-background{
-        padding: 50px;
+        padding: 50px 0px;
         box-shadow: inset 0px 20px 19px rgba(102,102,102,0.09);
+        display: none;
+        @media (min-width: 768px){
+            display: block;
+        }
     }
-    &-flex{
-        @include flexbox;
-        flex-direction: row;
-        justify-content: space-evenly;
+    &-wrapper{
+        padding: 50px;
     }
 }
+
+
+
+[class*=image_box_] {
+
+    img:first-of-type { //greyscale
+        display: block;
+    }
+    img:last-of-type { //color
+        display: none;
+    }
+
+    &:hover {
+        img:first-of-type { //greyscale
+            display: none;
+        }
+        img:last-of-type { //color
+            display: block;
+        }
+    }
+}
+
+.image_{
+    &busseys{
+        width: 121.15px;
+        @media (min-width: 993px){
+            width: 168.75px;
+        }
+
+        @media (min-width: 1218px){
+            width: 188px;
+        }
+        img {
+
+        }
+    }
+    &crane{
+        width: 184.95px;
+        @media (min-width: 993px){
+            width: 257.6px;
+        }
+
+        @media (min-width: 1218px){
+            width: 287px;
+        }
+        img{
+
+        }
+    }
+    &beat{
+        width: 46.4px;
+        @media (min-width: 993px){
+            width: 64.63px;
+        }
+
+        @media (min-width: 1218px){
+            width: 72px;
+        }
+        img{
+
+        }
+    }
+    &northerndiver{
+        width: 207.5px;
+        @media (min-width: 993px){
+            width: 289.017px;
+        }
+
+        @media (min-width: 1218px){
+            width: 322px;
+        }
+        img{
+
+        }
+    }
+}
+
