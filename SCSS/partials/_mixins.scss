@@ -36,5 +36,30 @@
         }
         
     }
+    .about_#{name}{
+        a{
+            background-color: $color;
+            &:hover{
+                background-color: $hover_color;
+            }
+        }
+    }
+
+    .nav_#{name}{
+        a{
+            background-color: $grey;
+            i{
+                // color: $color;
+                background-color: $grey;
+                &:hover{
+                    i{
+                        // background-color: $color;
+                        color: white;
+                    }
+    
+                }
+            }
+        }
+    }
 }
 

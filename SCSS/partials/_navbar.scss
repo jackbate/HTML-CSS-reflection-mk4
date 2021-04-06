@@ -1,25 +1,217 @@
 
+// .navbar{
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     background-color: $grey;
+//     width: 100%;
+//     flex-flow: wrap;
+//     justify-content: space-evenly;
+//     display: none;
+// }
+
+// .navsmall{
+//     font-size: 10px;
+// }
+
+// .navbox{
+//     display: flex;
+//     border-left: 1px solid black;
+//     border-right: 1px solid black ;
+//     color: $secondary;
+//     line-height: 5px;
+//     justify-content: center;
+//     align-items: center;
+// }
+.dropdown{
+    &-display{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+.dropdown-display{
+    width: 80vw;//1200px
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dropdown-display > li{
+    position: relative;
+    margin-right: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    li::after{
+        content: "";
+        position: absolute;
+        right: -37px;
+        top: 9px;
+        margin: auto;
+        width: 15px;
+        height: 2px;
+        display: block;
+        background-color: white;
+    }
+}
+
+ul{
+    list-style-type: none;
+}
+
+.nav_txtdec{
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hover-dropdown:hover > ul{
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+}
+
+
 .navbar{
+    &-layout{
+        display: flex;
+        flex-direction: row;
+    }
+    &-container{
+        display: none;
+        margin: 0 auto;
+        @media (min-width: 990px) {
+            display: block;
+        }
+    }
+}
+
+.navbar-layout{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0 auto 1px;
+    padding-right: 40px;
+}
+
+.hover-dropdown{
+    border-right: 1px solid rgba(0,0,0,.25);
+    border-left: 1px solid hsla(0,0%,100%,.1);
+    width: 192.667px;
     background-color: $grey;
-    width: 100%;
-    flex-flow: wrap;
-    justify-content: space-evenly;
-    display: none;
 }
 
-.navsmall{
-    font-size: 10px;
+.navbar-container{
+    position: relative;
+    display: block;
+    background-color: $grey;
 }
 
-.navbox{
+.navtitle_des{
+    color: white;
+}
+
+.dropdown-layout{
     display: flex;
-    border-left: 1px solid black;
-    border-right: 1px solid black ;
-    color: $secondary;
-    line-height: 5px;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    height: 100%;
+    &>li{
+        margin: auto 0;
+        position: relative;
+    }
+}
+
+.dc_it{
+    visibility: hidden;
+    left: 0%;
+    width: 100vw;
+    height: 45px;
+    background-color: $blue2;
+}
+
+.dc{
+    visibility: hidden;
+    left: 0%;
+    width: 100vw;
+    height: 45px;
+    &_web{
+        background-color: $primary;
+    }
+    &_it{
+        background-color: $blue2;
+    }
+    &_telecoms{
+        background-color: $red1;
+    }
+    &_bespoke{
+        background-color: $blue1;
+    }
+    &_digital{
+        background-color: $green;
+    }
+    &_cybers{
+        background-color: $red2;
+    }
+    &>li{
+        width: 1200px;
+        margin: 0 auto;
+        align-content: center;
+    }
+    &>div{
+        height: 100%;
+    }
+}
+
+.dc:hover > ul{
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    left: 40%;
+}
+.nav{
+    &_webhover:hover{
+        background-color: $primary;
+    }
+    &_ithover:hover{
+        background-color: $blue2;
+    }
+    &_telecomshover:hover{
+        background-color: $red1;
+    }
+    &_bespokehover:hover{
+        background-color: $blue1;
+    }
+    &_digitalhover:hover{
+        background-color: $green;
+    }
+    &_cybershover:hover{
+        background-color: $red2;
+    }
+}
+
+.icn{
+    &_web{
+        color: $primary;
+    }
+    &_it{
+        color: $blue2;
+    }
+    &_telecoms{
+        color: $red1;
+    }
+    &_bespoke{
+        color: $blue1;
+    }
+    &_digital{
+        color: $green;
+    }
+    &_cybers{
+        color: $red2;
+    }
 }

@@ -45,6 +45,26 @@
   background-color: #79539a;
 }
 
+.about_name a {
+  background-color: #926fb1;
+}
+
+.about_name a:hover {
+  background-color: #79539a;
+}
+
+.nav_name a {
+  background-color: #333645;
+}
+
+.nav_name a i {
+  background-color: #333645;
+}
+
+.nav_name a i:hover i {
+  color: white;
+}
+
 .card_it i {
   color: white;
   background-color: #4183d7;
@@ -73,6 +93,26 @@
 
 .news_it .text_container a:hover {
   background-color: #286abd;
+}
+
+.about_name a {
+  background-color: #4183d7;
+}
+
+.about_name a:hover {
+  background-color: #286abd;
+}
+
+.nav_name a {
+  background-color: #333645;
+}
+
+.nav_name a i {
+  background-color: #333645;
+}
+
+.nav_name a i:hover i {
+  color: white;
 }
 
 .card_telecoms i {
@@ -105,6 +145,26 @@
   background-color: #bc2c28;
 }
 
+.about_name a {
+  background-color: #d64541;
+}
+
+.about_name a:hover {
+  background-color: #bc2c28;
+}
+
+.nav_name a {
+  background-color: #333645;
+}
+
+.nav_name a i {
+  background-color: #333645;
+}
+
+.nav_name a i:hover i {
+  color: white;
+}
+
 .card_bespoke i {
   color: white;
   background-color: #67809f;
@@ -133,6 +193,26 @@
 
 .news_bespoke .text_container a:hover {
   background-color: #526781;
+}
+
+.about_name a {
+  background-color: #67809f;
+}
+
+.about_name a:hover {
+  background-color: #526781;
+}
+
+.nav_name a {
+  background-color: #333645;
+}
+
+.nav_name a i {
+  background-color: #333645;
+}
+
+.nav_name a i:hover i {
+  color: white;
 }
 
 .card_digital i {
@@ -165,6 +245,26 @@
   background-color: #25a25a;
 }
 
+.about_name a {
+  background-color: #2eec71;
+}
+
+.about_name a:hover {
+  background-color: #25a25a;
+}
+
+.nav_name a {
+  background-color: #333645;
+}
+
+.nav_name a i {
+  background-color: #333645;
+}
+
+.nav_name a i:hover i {
+  color: white;
+}
+
 .card_cybers i {
   color: white;
   background-color: #f62459;
@@ -193,6 +293,26 @@
 
 .news_cybers .text_container a:hover {
   background-color: #de093f;
+}
+
+.about_name a {
+  background-color: #f62459;
+}
+
+.about_name a:hover {
+  background-color: #de093f;
+}
+
+.nav_name a {
+  background-color: #333645;
+}
+
+.nav_name a i {
+  background-color: #333645;
+}
+
+.nav_name a i:hover i {
+  color: white;
 }
 
 .about {
@@ -273,46 +393,7 @@ buttons .uppurpbtn {
           justify-content: flex-start;
 }
 
-.site-logo {
-  width: 190px;
-  height: auto;
-  display: block;
-}
-
-.headerpad {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.headBtn {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .headBtn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.headerpad {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-Header_buttons .supBtn {
+.supBtn {
   display: inline;
   background-color: #4183d7;
   padding: 5px 15px;
@@ -325,7 +406,11 @@ Header_buttons .supBtn {
   margin-left: 20px;
 }
 
-Header_buttons .contBtn {
+.supBtn:hover {
+  background-color: green;
+}
+
+.contBtn {
   background-color: #999aa2;
   padding: 5px 15px;
   border: #f1f1f1 1px solid;
@@ -334,6 +419,66 @@ Header_buttons .contBtn {
   text-decoration: none;
   font-size: 18px;
   text-align: center;
+}
+
+.menubtn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header-layout {
+  border: 1px red solid;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header-layout > * {
+  padding-top: 20px;
+}
+
+.header-mainbtns {
+  border: 1px red solid;
+  display: none;
+}
+
+@media (min-width: 993px) {
+  .header-mainbtns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.border {
+  margin: 10px;
+  border: 1px red solid;
+}
+
+.intBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .latestContainer {
@@ -482,7 +627,85 @@ Header_buttons .contBtn {
   }
 }
 
-.navbar {
+.dropdown-display {
+  visibility: hidden;
+  position: absolute;
+}
+
+.dropdown-display {
+  width: 80vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropdown-display > li {
+  position: relative;
+  margin-right: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.dropdown-display > li li::after {
+  content: "";
+  position: absolute;
+  right: -37px;
+  top: 9px;
+  margin: auto;
+  width: 15px;
+  height: 2px;
+  display: block;
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav_txtdec {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hover-dropdown:hover > ul {
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.navbar-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar-container {
+  display: none;
+  margin: 0 auto;
+}
+
+@media (min-width: 990px) {
+  .navbar-container {
+    display: block;
+  }
+}
+
+.navbar-layout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,34 +716,156 @@ Header_buttons .contBtn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto 1px;
+  padding-right: 40px;
+}
+
+.hover-dropdown {
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  width: 192.667px;
   background-color: #333645;
-  width: 100%;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  display: none;
 }
 
-.navsmall {
-  font-size: 10px;
+.navbar-container {
+  position: relative;
+  display: block;
+  background-color: #333645;
 }
 
-.navbox {
+.navtitle_des {
+  color: white;
+}
+
+.dropdown-layout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  color: #fff;
-  line-height: 5px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+}
+
+.dropdown-layout > li {
+  margin: auto 0;
+  position: relative;
+}
+
+.dc_it {
+  visibility: hidden;
+  left: 0%;
+  width: 100vw;
+  height: 45px;
+  background-color: #4183d7;
+}
+
+.dc {
+  visibility: hidden;
+  left: 0%;
+  width: 100vw;
+  height: 45px;
+}
+
+.dc_web {
+  background-color: #926fb1;
+}
+
+.dc_it {
+  background-color: #4183d7;
+}
+
+.dc_telecoms {
+  background-color: #d64541;
+}
+
+.dc_bespoke {
+  background-color: #67809f;
+}
+
+.dc_digital {
+  background-color: #2ecc71;
+}
+
+.dc_cybers {
+  background-color: #f62459;
+}
+
+.dc > li {
+  width: 1200px;
+  margin: 0 auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.dc > div {
+  height: 100%;
+}
+
+.dc:hover > ul {
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  left: 40%;
+}
+
+.nav_webhover:hover {
+  background-color: #926fb1;
+}
+
+.nav_ithover:hover {
+  background-color: #4183d7;
+}
+
+.nav_telecomshover:hover {
+  background-color: #d64541;
+}
+
+.nav_bespokehover:hover {
+  background-color: #67809f;
+}
+
+.nav_digitalhover:hover {
+  background-color: #2ecc71;
+}
+
+.nav_cybershover:hover {
+  background-color: #f62459;
+}
+
+.icn_web {
+  color: #926fb1;
+}
+
+.icn_it {
+  color: #4183d7;
+}
+
+.icn_telecoms {
+  color: #d64541;
+}
+
+.icn_bespoke {
+  color: #67809f;
+}
+
+.icn_digital {
+  color: #2ecc71;
+}
+
+.icn_cybers {
+  color: #f62459;
 }
 
 .services {
@@ -543,6 +888,8 @@ Header_buttons .contBtn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .services .content-wrapper .flexbox [class*=card_] {
@@ -782,6 +1129,7 @@ body {
 
 .logo-wrapper {
   padding: 50px;
+  max-width: 1200px;
 }
 
 [class*=image_box_] img:first-of-type {

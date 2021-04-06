@@ -8,7 +8,7 @@
 
         <title>Home| Netmatters</title>
         <!-- Link to stylesheet -->
-        <link rel="stylesheet" type="text/css" href="SCSS/style2.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style2.css">
 
         <!-- This is the link to google fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,12 +22,11 @@
     <body>
         
         <header>
-            <div class="content-wrapper">
-                <div class="1headerpad">
+            <!-- <div class="content-wrapper">
+                <div class="headerpad">
                     <div class="site-logo">
                     <a href="#header"><img src="./Images/Netmatterslogo.png" alt="Netmatters Logo"></a>
                     </div>
-                    <!-- This is going to be the two buttons for the support and contact buttons at the top of the page -->
                     <div class="headBtn">
                         <a href="#" class="supBtn"><i class="fas fa-mouse"></i> Support</a>
                         <a href="#" class="contBtn"><i class="far fa-paper-plane"></i> Contact</a>
@@ -36,9 +35,183 @@
                         <i class="fas fa-bars"></i>
                     </div>
                 </div>
+            </div>  -->
+            <div class="content-wrapper">
+                <div class="header-layout">
+                    <div class="header-logo">
+                        <p>Logo</p>
+                    </div>
+                    <div>
+                        <div class="header-mainbtns">
+                            <div class="border">
+                                <a href="#" class="supBtn">
+                                    <i class="fas fa-mouse"></i> Support
+                                </a>
+                            </div>
+                            <div class="border">
+                                <a href="#" class="contBtn"><i class="far fa-paper-plane"></i> Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-search">
+                        <p>Search bar</p>
+                    </div>
+                    <div class="header-actionBtn">
+                        <p>Phone button</p>
+                        <p>menu button</p>
+                    </div>
+                </div>
             </div>
         </header>
 
+        <div class="navbar-container">
+            <ul class="navbar-layout">
+                <li class="hover-dropdown nav_web nav_webhover">
+                    <a href="#" id="nav_web" class="nav_txtdec">
+                        <p>
+                            <i class="fas-1 fa-code fas icn_web"></i><br>
+                        </p>
+                        <p class="navtitle_des">
+                            <small>Web</small><br>Design
+                        </p>
+                    </a>
+                    <ul class="dropdown-display dc dc_web">
+                        <li>
+                            <div style="height: 100%;">
+                                <ul class="dropdown-layout">
+                                    <li>Stylish Websites</li>
+                                    <li>Ecommerce Stores</li>
+                                    <li>Branding</li>
+                                    <li>Mobile Apps</li>
+                                    <li>Web Hosting</li>
+                                    <li>Pay Monthly Websites</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hover-dropdown nav_it nav_ithover" id="nav_it">
+                    <a href="#" id="nav_it" class="nav_txtdec">
+                        <p>
+                            <i class="fas-1 fa-desktop fas icn_it"></i><br>
+                        </p>
+                        <p class="navtitle_des">
+                            <small>IT</small><br>Support
+                        </p>
+                    </a>
+                    <ul class="dropdown-display dc dc_it">
+                        <li>
+                            <div style="height: 100%;">
+                                <ul class="dropdown-layout">
+                                    <li>Managed IT</li>
+                                    <li>Business IT</li>
+                                    <li>Office 365</li>
+                                    <li>Consultancy</li>
+                                    <li>Cloud Provider</li>
+                                    <li>Data Backup</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hover-dropdown nav_telecoms nav_telecomshover">
+                    <a href="#" id="nav_telecoms" class="nav_txtdec">
+                        <p>
+                            <i class="fas fa-phone-volume icn_telecoms"></i>
+                        </p>
+                        <p class="navtitle_des">
+                            <small>Telecoms</small><br>Services
+                        </p>
+                    </a>
+                    <ul class="dropdown-display dc dc_telecoms">
+                        <li>
+                            <div style="height: 100%;">
+                                <ul class="dropdown-layout">
+                                    <li>Gigabit Voucher</li>
+                                    <li>Hosted Voip</li>
+                                    <li>Business Voip</li>
+                                    <li>Business Broadband</li>
+                                    <li>Leased Line</li>
+                                    <li>3cx Systems</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hover-dropdown nav_bespoke nav_bespokehover">
+                    <a href="#" id="nav_bespoke" class="nav_txtdec">
+                        <p>
+                            <i class="fas fa-th icn_bespoke"></i>
+                        </p>
+                        <p class="navtitle_des">
+                            <small>Bespoke</small><br> Software
+                        </p>
+                    </a>
+                    <ul class="dropdown-display dc dc_bespoke">
+                        <li>
+                            <div style="height: 100%;">
+                                <ul class="dropdown-layout">
+                                    <li>Workflow Solutions</li>
+                                    <li>Automation</li>
+                                    <li>System Integration</li>
+                                    <li>Database management</li>
+                                    <li>Sharepoint</li>
+                                    <li>ERP</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hover-dropdown nav_digital nav_digitalhover">
+                    <a href="#" id="nav_digital" class="nav_txtdec">
+                        <p>
+                            <i class="fas fa-signal icn_digital"></i>
+                        </p>
+                        <p class="navtitle_des">
+                            <small>Digital</small><br> Marketing
+                        </p>
+                    </a>
+                    <ul class="dropdown-display dc dc_digital">
+                        <li>
+                            <div style="height: 100%;">
+                                <ul class="dropdown-layout">
+                                    <li>Search (SEO)</li>
+                                    <li>Paid (PPC)</li>
+                                    <li>Conversion (CRO)</li>
+                                    <li>Email</li>
+                                    <li>Social Media</li>
+                                    <li>Content</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hover-dropdown nav_cybers nav_cybershover">
+                    <a href="#" id="nav_cybers" class="nav_txtdec">
+                        <p>
+                            <i class="fas fa-shield-alt icn_cybers"></i>
+                        </p>
+                        <p class="navtitle_des">
+                            <small>Cyber</small><br> Security
+                        </p>
+                    </a>
+                    <ul class="dropdown-display dc dc_cybers">
+                        <li>
+                            <div style="height: 100%;">
+                                <ul class="dropdown-layout">
+                                    <li>Assesment</li>
+                                    <li>Management</li>
+                                    <li>Penetration Testing</li>
+                                    <li>Cyber Essentials</li>
+                                    <li>PCI/DSS</li>
+                                    <li>Hacker Prevention</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
         <!-- <div class="content-wrapper">
             <div class="navbar">

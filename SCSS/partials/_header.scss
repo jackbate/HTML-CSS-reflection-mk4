@@ -1,51 +1,112 @@
-.site-logo{
-    width: 190px;
-    height: auto;
-    display: block;
+// .site-logo{
+//     width: 190px;
+//     height: auto;
+//     display: inline-block;
+//     border: solid 1px red;
+// }
+
+// .headerpad{
+//     display: flex;
+//     justify-content: space-between;
+//     flex-direction: column;
+// }
+
+// .headBtn{
+//     display: none;
+//     border: 1px red solid;
+//     @media (min-width: map-get($breakpoints, 'm')) {
+//         display: inline flex;
+//         justify-content: flex-end;
+//       }
+// }
+
+// .headerpad{
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     border: 1px red solid;
+// }
+.supBtn{
+    display: inline;
+    background-color: $blue2;
+    padding: 5px 15px;
+    border: $offwhite 1px solid;
+    border-radius: 3px;
+    color: $secondary;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 20px;
+    &:hover{
+        background-color: green;
+    }
 }
 
-.headerpad{
+.contBtn{
+    background-color: $lightgrey2;
+    padding: 5px 15px;
+    border: $offwhite 1px solid;
+    border-radius: 3px;
+    color: $secondary;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+// .btn{
+//     &support{
+        
+//     }
+//     &contact{
+        
+//     }
+// }
+
+.menubtn{
+    width: fit-content;
+}
+
+.header-layout{
+    border: 1px red solid;
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &>*{
+        padding-top: 20px;
+    }
 }
 
-.headBtn{
+.header-mainbtns{
+    border: 1px red solid;
     display: none;
-    @media (min-width: map-get($breakpoints, 'm')) {
+    @media (min-width:993px){
         display: flex;
-      }
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
-.headerpad{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
+.border{
+    margin: 10px;
+    border: 1px red solid;
+}
+
+.intBtn{
     display: flex;
-    justify-content: space-between;
+    text-decoration: none;
+    align-content: center;
 }
 
-Header_buttons{
-    .supBtn{
-        display: inline;
-        background-color: $blue2;
-        padding: 5px 15px;
-        border: $offwhite 1px solid;
-        border-radius: 3px;
-        color: $secondary;
-        text-decoration: none;
-        font-size: 18px;
-        text-align: center;
-        margin-left: 20px;
-    }
-
-    .contBtn{
-        background-color: $lightgrey2;
-        padding: 5px 15px;
-        border: $offwhite 1px solid;
-        border-radius: 3px;
-        color: $secondary;
-        text-decoration: none;
-        font-size: 18px;
-        text-align: center;
-    }
-}
+// header{
+//     &-layout{
+//         @include flexbox;
+//         flex-direction: row;
+//         border: 1px solid red;
+//         justify-content: space-evenly;
+//         width: 100%;
+//     }
+// }
