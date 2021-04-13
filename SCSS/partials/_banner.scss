@@ -5,16 +5,18 @@
 }
 
 .banner-text{
-    color: rgba(255, 255, 255, 1);
+    color: $secondary;
 
 }
 
-.banner_btn{
-    background-color: #926fb1;
-}
 .banner-section{
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: flex-start;
+}
+
+.banbtn{
+    background-color: $blue2;
+    border: 1px $blue2 solid;
 }

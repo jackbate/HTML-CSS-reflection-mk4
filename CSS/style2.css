@@ -322,11 +322,7 @@ buttons .uppurpbtn {
 }
 
 .banner-text {
-  color: white;
-}
-
-.banner_btn {
-  background-color: #926fb1;
+  color: #fff;
 }
 
 .banner-section {
@@ -334,6 +330,11 @@ buttons .uppurpbtn {
   flex-direction: column;
   align-content: center;
   justify-content: flex-start;
+}
+
+.banbtn {
+  background-color: #4183d7;
+  border: 1px #4183d7 solid;
 }
 
 .supBtn {
@@ -347,9 +348,11 @@ buttons .uppurpbtn {
   font-size: 18px;
   text-align: center;
   margin-left: 20px;
+  width: 105px;
+  height: 44px;
 }
 .supBtn:hover {
-  background-color: green;
+  background-color: #286abd;
 }
 
 .contBtn {
@@ -362,6 +365,9 @@ buttons .uppurpbtn {
   font-size: 18px;
   text-align: center;
 }
+.contBtn:hover {
+  background-color: #84858f;
+}
 
 .menubtn {
   width: -webkit-fit-content;
@@ -373,7 +379,7 @@ buttons .uppurpbtn {
   width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .header-layout > * {
@@ -390,6 +396,11 @@ buttons .uppurpbtn {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+.heder-actionBtn {
+  display: flex;
+  flex-direction: row;
 }
 
 .border {
@@ -420,13 +431,16 @@ buttons .uppurpbtn {
   padding: 30px 0px;
 }
 
+.news_card_container {
+  padding-bottom: 50px;
+}
 .news_card_container .news_card_width_container {
   padding: 0 20px;
 }
 .news_card_container .news_card_width_container [class*=news_] {
   margin-top: 30px;
   border-radius: 10px;
-  border: solid 1px #666;
+  border: solid 1px #999aa2;
 }
 .news_card_container .news_card_width_container [class*=news_] .image_container {
   overflow: hidden;
@@ -487,10 +501,10 @@ buttons .uppurpbtn {
     width: 750px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .news_card_container .news_card_width_container [class*=news_] {
-    width: 348px;
+    width: 24vw;
   }
   .news_card_container .news_card_width_container [class*=news_]:last-of-type {
     display: none;
@@ -512,7 +526,7 @@ buttons .uppurpbtn {
     width: 1200px;
   }
   .news_card_container .news_card_width_container [class*=news_] {
-    width: 380px;
+    width: 24vw;
   }
 }
 .dropdown-display {
@@ -594,8 +608,13 @@ ul {
 
 .navbar-container {
   position: relative;
-  display: block;
+  display: none;
   background-color: #333645;
+}
+@media (min-width: 993px) {
+  .navbar-container {
+    display: block;
+  }
 }
 
 .navtitle_des {
@@ -842,7 +861,13 @@ ul {
 }
 @media (min-width: 1218px) {
   .content-wrapper {
-    margin: 0 340px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 993px) {
+  .content-wrapper {
+    width: 80vw;
+    justify-content: space-evenly;
   }
 }
 
@@ -908,6 +933,9 @@ body {
 [class*=image_box_]:hover img:first-of-type {
   display: none;
 }
+[class*=image_box_]:hover img:first-of-type .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 [class*=image_box_]:hover img:last-of-type {
   display: block;
 }
@@ -964,6 +992,56 @@ body {
     width: 322px;
   }
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #333645;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 2px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  width: 260px;
+  bottom: 170%;
+  left: 10%;
+  margin-left: -60px;
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 260px;
+  background-color: #333645;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 2px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  width: 260px;
+  bottom: 100%;
+  left: 10%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.logo_line {
+  margin: 0 auto;
+  background-color: white;
+  width: 25px;
+  height: 3px;
+}
+
 footer {
   background-color: #333645;
 }

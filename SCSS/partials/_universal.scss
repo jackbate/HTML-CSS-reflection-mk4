@@ -23,7 +23,12 @@
     height: 100%;
 
     @media (min-width: 1218px){
-        margin: 0 340px;
+        margin: 0 auto;
+    }
+    @media  (min-width: 993px){
+        width: 80vw;
+        justify-content: space-evenly;
+        
     }
 
 }

@@ -1,28 +1,5 @@
 
-// .navbar{
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     background-color: $grey;
-//     width: 100%;
-//     flex-flow: wrap;
-//     justify-content: space-evenly;
-//     display: none;
-// }
 
-// .navsmall{
-//     font-size: 10px;
-// }
-
-// .navbox{
-//     display: flex;
-//     border-left: 1px solid black;
-//     border-right: 1px solid black ;
-//     color: $secondary;
-//     line-height: 5px;
-//     justify-content: center;
-//     align-items: center;
-// }
 .dropdown{
     &-display{
         visibility: hidden;
@@ -105,8 +82,11 @@ ul{
 
 .navbar-container{
     position: relative;
-    display: block;
+    display: none;
     background-color: $grey;
+    @media (min-width: 993px){
+        display: block;
+    }
 }
 
 .navtitle_des{

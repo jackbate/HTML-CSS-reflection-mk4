@@ -371,11 +371,7 @@ buttons .uppurpbtn {
 }
 
 .banner-text {
-  color: white;
-}
-
-.banner_btn {
-  background-color: #926fb1;
+  color: #fff;
 }
 
 .banner-section {
@@ -393,6 +389,11 @@ buttons .uppurpbtn {
           justify-content: flex-start;
 }
 
+.banbtn {
+  background-color: #4183d7;
+  border: 1px #4183d7 solid;
+}
+
 .supBtn {
   display: inline;
   background-color: #4183d7;
@@ -404,10 +405,12 @@ buttons .uppurpbtn {
   font-size: 18px;
   text-align: center;
   margin-left: 20px;
+  width: 105px;
+  height: 44px;
 }
 
 .supBtn:hover {
-  background-color: green;
+  background-color: #286abd;
 }
 
 .contBtn {
@@ -419,6 +422,10 @@ buttons .uppurpbtn {
   text-decoration: none;
   font-size: 18px;
   text-align: center;
+}
+
+.contBtn:hover {
+  background-color: #84858f;
 }
 
 .menubtn {
@@ -437,8 +444,9 @@ buttons .uppurpbtn {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -465,6 +473,16 @@ buttons .uppurpbtn {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+.heder-actionBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .border {
@@ -500,6 +518,10 @@ buttons .uppurpbtn {
   padding: 30px 0px;
 }
 
+.news_card_container {
+  padding-bottom: 50px;
+}
+
 .news_card_container .news_card_width_container {
   padding: 0 20px;
 }
@@ -507,7 +529,7 @@ buttons .uppurpbtn {
 .news_card_container .news_card_width_container [class*=news_] {
   margin-top: 30px;
   border-radius: 10px;
-  border: solid 1px #666;
+  border: solid 1px #999aa2;
 }
 
 .news_card_container .news_card_width_container [class*=news_] .image_container {
@@ -594,12 +616,12 @@ buttons .uppurpbtn {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .news_card_container .news_card_width_container [class*=news_] {
-    width: 348px;
+    width: 24vw;
   }
   .news_card_container .news_card_width_container [class*=news_]:last-of-type {
     display: none;
@@ -623,7 +645,7 @@ buttons .uppurpbtn {
     width: 1200px;
   }
   .news_card_container .news_card_width_container [class*=news_] {
-    width: 380px;
+    width: 24vw;
   }
 }
 
@@ -729,8 +751,14 @@ ul {
 
 .navbar-container {
   position: relative;
-  display: block;
+  display: none;
   background-color: #333645;
+}
+
+@media (min-width: 993px) {
+  .navbar-container {
+    display: block;
+  }
 }
 
 .navtitle_des {
@@ -1052,7 +1080,16 @@ ul {
 
 @media (min-width: 1218px) {
   .content-wrapper {
-    margin: 0 340px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 993px) {
+  .content-wrapper {
+    width: 80vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -1144,6 +1181,10 @@ body {
   display: none;
 }
 
+[class*=image_box_]:hover img:first-of-type .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 [class*=image_box_]:hover img:last-of-type {
   display: block;
 }
@@ -1210,6 +1251,55 @@ body {
   .image_northerndiver {
     width: 322px;
   }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #333645;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 2px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  width: 260px;
+  bottom: 170%;
+  left: 10%;
+  margin-left: -60px;
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 260px;
+  background-color: #333645;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 2px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  width: 260px;
+  bottom: 100%;
+  left: 10%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.logo_line {
+  margin: 0 auto;
+  background-color: white;
+  width: 25px;
+  height: 3px;
 }
 
 footer {

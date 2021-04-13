@@ -39,8 +39,10 @@
     font-size: 18px;
     text-align: center;
     margin-left: 20px;
+    width: 105px;
+    height: 44px;
     &:hover{
-        background-color: green;
+        background-color: #286abd;
     }
 }
 
@@ -53,6 +55,9 @@
     text-decoration: none;
     font-size: 18px;
     text-align: center;
+    &:hover{
+        background-color: #84858f;
+    }
 }
 
 // .btn{
@@ -73,7 +78,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     &>*{
         padding-top: 20px;
@@ -88,6 +93,11 @@
         flex-direction: row;
         justify-content: space-between;
     }
+}
+
+.heder-actionBtn{
+    display:flex;
+    flex-direction: row;
 }
 
 .border{

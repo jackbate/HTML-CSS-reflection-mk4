@@ -77,13 +77,15 @@
 
 .news_card_container {
 
+    padding-bottom: 50px;
+
     .news_card_width_container {
         padding: 0 20px;
 
         [class*=news_] {
             margin-top: 30px;
             border-radius: 10px;
-            border: solid 1px $lightgrey;
+            border: solid 1px $lightgrey2;
 
             .image_container {
                 overflow: hidden;
@@ -162,10 +164,10 @@
             width: 750px;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-evenly;
 
             [class*=news_] {
-                width: 348px;
+                width: 24vw;
             }
 
             [class*=news_]:last-of-type {
@@ -197,7 +199,7 @@
             width: 1200px;
 
             [class*=news_]{
-                width: 380px;
+                width: 24vw;
             }
         }
     }
