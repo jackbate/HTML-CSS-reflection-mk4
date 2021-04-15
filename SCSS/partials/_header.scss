@@ -14,7 +14,7 @@
     height: 100%;
 
     @media  (min-width: 993px){
-        width: 80vw;
+        width: inherit;
         justify-content: space-evenly;
         margin: 0px 15px;
     }
@@ -37,6 +37,9 @@
             margin-top: auto;
             margin-bottom: auto;
         }
+    }
+    @media (min-width:1208px){
+        width: 80vw;
     }  
 }
 
@@ -62,7 +65,13 @@
 .header-mainbtns{
     display: none;
     @media (min-width:998px){
-        display: block;
+        display: flex;
+        margin-right: -180px;
+        margin-left: 90px;
+    }
+    @media (min-width:1208px){
+        margin-left: inherit;
+        margin-right: inherit;
     }
 }
 
@@ -112,6 +121,9 @@
 .header-actionBtn{
     display:flex;
     flex-direction: row;
+    @media (min-width: 998px){
+        float: right;
+    }
 }
 
 .menu_btn{
@@ -191,10 +203,15 @@
         width: 174px;
         height: 56px;
         background-color: white;
+        border: 1px solid $lightgrey2;
     }
     @media (min-width:998px){
+        display: none;
         width: 240px;
         border-radius: 5px 0px 0px 5px;
+    }
+    @media (min-width:1208px){
+        display: inherit;
     }
     
 }
@@ -214,12 +231,16 @@
         width: 64px;
         height: 56px;
         background-color: $lightgrey2;
+        border: 1px solid $lightgrey2;
     }
     @media (min-width:998px){
-        float: left;
-        border-radius: 0px 5px 5px 0px;
+        float: right;
+        border-radius: 5px 5px 5px 5px;
         background-color: $lightgrey2;
         height: 56px;
+    }
+    @media (min-width:1208px){
+        border-radius: 0px 5px 5px 0px;
     }
 }
 

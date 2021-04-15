@@ -416,7 +416,7 @@ buttons .uppurpbtn {
 
 @media (min-width: 993px) {
   .nomargin_small {
-    width: 80vw;
+    width: inherit;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -454,6 +454,12 @@ buttons .uppurpbtn {
   }
 }
 
+@media (min-width: 1208px) {
+  .header-layout {
+    width: 80vw;
+  }
+}
+
 .site-logo {
   width: 214px;
   height: 37.5px;
@@ -480,7 +486,18 @@ buttons .uppurpbtn {
 
 @media (min-width: 998px) {
   .header-mainbtns {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -180px;
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: 1208px) {
+  .header-mainbtns {
+    margin-left: inherit;
+    margin-right: inherit;
   }
 }
 
@@ -544,6 +561,12 @@ buttons .uppurpbtn {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+@media (min-width: 998px) {
+  .header-actionBtn {
+    float: right;
+  }
 }
 
 .menu_btn {
@@ -633,13 +656,21 @@ buttons .uppurpbtn {
     width: 174px;
     height: 56px;
     background-color: white;
+    border: 1px solid #999aa2;
   }
 }
 
 @media (min-width: 998px) {
   .header-search input[type=text] {
+    display: none;
     width: 240px;
     border-radius: 5px 0px 0px 5px;
+  }
+}
+
+@media (min-width: 1208px) {
+  .header-search input[type=text] {
+    display: inherit;
   }
 }
 
@@ -661,15 +692,22 @@ buttons .uppurpbtn {
     width: 64px;
     height: 56px;
     background-color: #999aa2;
+    border: 1px solid #999aa2;
   }
 }
 
 @media (min-width: 998px) {
   .header-search button {
-    float: left;
-    border-radius: 0px 5px 5px 0px;
+    float: right;
+    border-radius: 5px 5px 5px 5px;
     background-color: #999aa2;
     height: 56px;
+  }
+}
+
+@media (min-width: 1208px) {
+  .header-search button {
+    border-radius: 0px 5px 5px 0px;
   }
 }
 
