@@ -157,21 +157,39 @@ ul{
 .nav{
     &_webhover:hover{
         background-color: $primary;
+        & i{
+            color: white;
+        }
     }
     &_ithover:hover{
         background-color: $blue2;
+        & i{
+            color: white;
+        }
     }
     &_telecomshover:hover{
         background-color: $red1;
+        & i{
+            color: white;
+        }
     }
     &_bespokehover:hover{
         background-color: $blue1;
+        & i{
+            color: white;
+        }
     }
     &_digitalhover:hover{
         background-color: $green;
+        & i{
+            color: white;
+        }
     }
     &_cybershover:hover{
         background-color: $red2;
+        & i{
+            color: white;
+        }
     }
 }
 
