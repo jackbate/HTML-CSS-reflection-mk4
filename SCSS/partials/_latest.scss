@@ -161,13 +161,13 @@
     .news_card_container {
         .news_card_width_container {
             margin: 0 auto;
-            width: 750px;
+            width: 100vw;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
 
             [class*=news_] {
-                width: 24vw;
+                width: 45vw;
             }
 
             [class*=news_]:last-of-type {

@@ -306,7 +306,7 @@
                         <p>We provide cost effective, reliable solutions to a range of services; from bespoke  could-based management systems, workflow and IT solutions through to creative website  development and intergrated digital campaining.</p>
                     </div>
         
-                    <a href="#header" class="btn ourCult" id="ourCult">OUR CULTURE</a>
+                    <a href="#header" class="ourCult btn" id="ourCult" style="color: #333645;">OUR CULTURE</a>
                 </div>
             </div>
         </section>
@@ -422,25 +422,27 @@
         </section>
 
         <div class="form-background">
-            <div class="content-wrapper">
+            <div class="form-wrapperout">
                 <div class="form-content">
+                    <div class="form-title">
                     <h2>Email Newsletter Sign-up</h2>
+                    </div>
                     <div class="form-wrapper">
                     <form>
-                        <div class="user_name">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" required class="" class=""></textarea><br>
+                        <div class="input_name">
+                            <label for="name" style="font-weight: bold;">Your Name</label><span class="required">*</span>
+                            <input type="text" id="name" class="user_name"></textarea><br>
                         </div>
-                        <div class="user_email">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" required class="" class=""></textarea><br>
+                        <div class="input_email">
+                            <label for="email" style="font-weight: bold; margin-top: 30px;">Your Email</label><span class="required">*</span>
+                            <input type="email" id="email" class="user_email"></textarea><br>
                         </div>
-                        <div class="user_checkbox">
-                            <input type="checkbox" id="marketing" class=""></checkbox>
-                            <label for="marketing">Please tick this box if you wish to recieve marketing infomation from us. Please see our <a href="#" style="color: black;">Privacy Policy</a> for more information on how we use your data.</label>
+                        <div class="input_checkbox">
+                            <span class="user_checkbox"></span>
+                            <span class="checkbox_text">Please tick this box if you wish to recieve marketing infomation from us. Please see our <a href="#" style="color: black;">Privacy Policy</a> for more information on how we use your data.</span>
                         </div>
                         <div>
-                            <input type="submit" value="Subscribe" class=""></input>
+                            <button name="submit" class="submit_btn">Subscribe</button>
                         </div>
                     </form>
                     </div>

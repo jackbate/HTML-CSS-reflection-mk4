@@ -288,7 +288,7 @@
 
 .ourCult {
   background-color: #fff;
-  color: #999aa2;
+  color: #333645;
 }
 
 .ourCult::after {
@@ -324,6 +324,12 @@ buttons .uppurpbtn {
 .banner-text {
   color: #fff;
   letter-spacing: 0.4px;
+  text-align: center;
+}
+@media (min-width: 998px) {
+  .banner-text {
+    text-align: left;
+  }
 }
 
 .banner-section {
@@ -332,6 +338,21 @@ buttons .uppurpbtn {
   align-content: center;
   justify-content: flex-start;
   margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 998px) {
+  .banner-section {
+    margin-left: 0px;
+  }
+}
+
+.banner-btn {
+  text-align: center;
+}
+@media (min-width: 998px) {
+  .banner-btn {
+    text-align: left;
+  }
 }
 
 .banbtn {
@@ -691,13 +712,13 @@ buttons .uppurpbtn {
 @media (min-width: 768px) {
   .news_card_container .news_card_width_container {
     margin: 0 auto;
-    width: 750px;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
   .news_card_container .news_card_width_container [class*=news_] {
-    width: 24vw;
+    width: 45vw;
   }
   .news_card_container .news_card_width_container [class*=news_]:last-of-type {
     display: none;
@@ -1076,7 +1097,7 @@ ul {
     margin: 0 auto;
   }
 }
-@media (min-width: 993px) {
+@media (min-width: 998px) {
   .content-wrapper {
     width: 80vw;
     justify-content: space-evenly;
@@ -1111,14 +1132,87 @@ body {
 
 .form-background {
   background-color: #ddd;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .form-content {
   display: flex;
   flex-direction: column;
 }
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 .form-wrapper {
   display: flex;
   flex-wrap: wrap;
+}
+.form-wrapperout {
+  padding: 50px 30px;
+}
+
+.user_name {
+  width: 285px;
+}
+
+.user_name {
+  width: 100%;
+  height: 47px;
+  margin-bottom: 30px;
+}
+.user_email {
+  width: 100%;
+  height: 47px;
+  margin-bottom: 30px;
+}
+.user_checkbox {
+  display: inline-block;
+  background-color: #ddd;
+  border: 3px solid #333645;
+  border-radius: 3px;
+  height: 32px;
+  width: 32px;
+  float: left;
+  margin-right: 20px;
+}
+.user_checkbox:active {
+  background-color: #333645;
+}
+
+.checkbox_text {
+  width: 80%;
+  float: right;
+  letter-spacing: 0.4px;
+  line-height: 32px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .checkbox_text {
+    float: left;
+  }
+}
+
+.required {
+  color: red;
+}
+
+.submit_btn {
+  margin-top: 20px;
+  background-color: #333645;
+  color: white;
+  border: 1px solid #333645;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 1.063rem;
+}
+@media (min-width: 768px) {
+  .submit_btn {
+    margin-top: 40px;
+  }
 }
 
 .logo-background {
@@ -1256,14 +1350,22 @@ body {
 
 footer {
   background-color: #333645;
+  height: 1000px;
+}
+@media (min-width: 768px) {
+  footer {
+    height: 568px;
+  }
 }
 
 .footer-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   color: white;
   justify-content: space-evenly;
   padding: 47px 0px 43px;
+  flex-wrap: wrap;
+  height: 100%;
 }
 .footer-contact {
   padding: 0px 15px;
@@ -1286,6 +1388,7 @@ footer {
   padding: 0px 15px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .footer-social-facebook {
   background: transparent;

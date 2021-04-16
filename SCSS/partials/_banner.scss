@@ -7,6 +7,10 @@
 .banner-text{
     color: $secondary;
     letter-spacing: .4px;
+    text-align: center;
+    @media (min-width:998px){
+        text-align: left;
+    }
 }
 
 .banner-section{
@@ -15,9 +19,22 @@
     align-content: center;
     justify-content: flex-start;
     margin-right: auto;
+    margin-left: auto;
+    @media (min-width:998px){
+        margin-left: 0px;
+    }
 }
+
+.banner-btn{
+    text-align: center;
+    @media (min-width:998px){
+        text-align: left;
+    }
+}
+    
 
 .banbtn{
     background-color: $blue2;
     border: 1px $blue2 solid;
+    
 }
