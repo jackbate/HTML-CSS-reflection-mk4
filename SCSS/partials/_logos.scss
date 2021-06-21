@@ -10,6 +10,13 @@
     &-wrapper{
         padding: 50px;
         max-width: 1200px;
+        @media (min-width: 993px){
+            margin: 0 15px;
+            padding: 0 15px;
+        }
+        @media (min-width:1218px){
+            margin: 0 auto;
+        }
     }
 }
 
