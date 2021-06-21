@@ -22,6 +22,10 @@
 .ourCult{
     background-color: $secondary;
     color: $grey;
+    &:hover{
+        background-color: #ebebeb;
+        border-color: #e0e0e0;
+    }
 }
 
 .ourCult::after{
@@ -35,6 +39,9 @@
 
 .marginbot{
     margin-bottom: 25px;
+    @media (min-width: 1218px){
+        width: 50%;
+    } 
 }
 
 .ap1{

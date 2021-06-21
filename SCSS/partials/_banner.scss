@@ -1,11 +1,15 @@
 .banner{
     height: 70vh;
     background-image: url("../Images/sliderplaceholder.png");
+    // background-image: linear-gradient(#fff,#e5e5e5 50%,#fff);
+    //linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 3%, rgba(0,0,0,0) 100%)
     background-size: cover;
 }
 
 .banner-text{
     color: $secondary;
+    font-size: 1.25rem;
+    line-height: 2.2rem;
     letter-spacing: .4px;
     text-align: center;
     @media (min-width:998px){
@@ -34,7 +38,27 @@
     
 
 .banbtn{
-    background-color: $blue2;
-    border: 1px $blue2 solid;
+    background-color: $primary;
+    border: 1px $primary solid;
+    &:hover{
+        background-color: $primaryhov;
+        border-color: $primaryhov;
+    }
     
+}
+
+.tint{
+    z-index: 0;
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 145px;
+    left: 0px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 3%, rgba(0,0,0,0) 100%);
+    @media (min-width:998px){
+        top: 115px;
+    }
+    @media (min-width:1218px){
+        top: 222px;
+    }
 }

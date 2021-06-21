@@ -57,6 +57,7 @@ ul{
         flex-direction: row;
     }
     &-container{
+        z-index: 1;
         display: none;
         margin: 0 auto;
         @media (min-width: 990px) {

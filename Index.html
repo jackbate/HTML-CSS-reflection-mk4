@@ -22,22 +22,8 @@
     <body>
         
         <header>
-            <!-- <div class="content-wrapper">
-                <div class="headerpad">
-                    <div class="site-logo">
-                    <a href="#header"><img src="./Images/Netmatterslogo.png" alt="Netmatters Logo"></a>
-                    </div>
-                    <div class="headBtn">
-                        <a href="#" class="supBtn"><i class="fas fa-mouse"></i> Support</a>
-                        <a href="#" class="contBtn"><i class="far fa-paper-plane"></i> Contact</a>
-                    </div>
-                    <div class="menuBtn">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-            </div>  -->
             <div class="nomargin_small">
-                <div class="header-layout">
+                <div class="content-sizing header-layout">
                     <div class="header-logo">
                         <a href="#header"><img src="./Images/Netmatterslogo.png" alt="Netmatters Logo" class="site-logo"></a>
                     </div>
@@ -73,7 +59,7 @@
         </header>
 
         <div class="navbar-container">
-            <ul class="navbar-layout">
+            <ul class="content-sizing navbar-layout">
                 <li class="hover-dropdown nav_web nav_webhover">
                     <a href="#" id="nav_web" class="nav_txtdec">
                         <p>
@@ -222,14 +208,16 @@
         </div>
 
         <section class="banner">
-            <div class="content-wrapper">
-                <div class="banner-section">
-                    <div class="banner-text">
-                        <h1>Web design</h1>
-                        <p>For businesses looking to make a strong<br> and effective first impression</p>
-                    </div>
-                    <div class="banner-btn">
-                        <a href="#" class="btn banbtn">Find out more <i class="fas fa-arrow-right"></i></a>
+            <div class="tint">
+                <div class="content-wrapper content-sizing">
+                    <div class="banner-section">
+                        <div class="banner-text">
+                            <h1>Web design</h1>
+                            <p>For businesses looking to make a strong<br> and effective first impression</p>
+                        </div>
+                        <div class="banner-btn">
+                            <a href="#" class="btn banbtn">Find out more <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -237,7 +225,7 @@
 
 
         <div class="services">
-            <div class="content-wrapper">
+            <div class="content-wrapper content-sizing">
                 <div class="flexbox">
                     <div class="card_bespoke">
                         <i class="fab fa-uncharted circback"></i>
@@ -293,13 +281,14 @@
         </div>
 
         <section class="about">
-            <div class="content-wrapper">
+            <div class="content-sizing">
+                <!-- content-wrapper  ^^^ -->
                 <div class="aboutContent">
                     <div>
                         <h3 class="ahead">Netmatters</h3>
                     </div>
                     <div class="marginbot">
-                        <p class="ap1">Netmatters Ltd is a leading web design, IT support and digital marketing agency baswed in Wymondum, Norfolk.</p>
+                        <p class="ap1">Netmatters Ltd is a leading web design, IT support and digital marketing agency based in Wymondum, Norfolk.</p>
                             
                         <p>Founded in 2008 , we work with buisnesses from a variety of industries to gain new prospects, nurture existing leads and further grow their sales.</p>
 
@@ -313,8 +302,8 @@
 
 
         <div id="latestContainer">
-            <div class="content-wrapper">
-                <div class="latest" style="margin-right: 73vw;">
+            <div class="content-wrapper content-sizing jl">
+                <div class="latest">
                     <h3 class="latestHeader">LATEST</h3>
                 </div>
             </div>  
@@ -322,9 +311,12 @@
 
         <section class="news_card_container">
             <div class="news_card_width_container">
-                <div class="news_web">
+                <div class="news_web newsshadow_1">
                     <div class="image_container">
                         <img src="Images/upd1-img.jpg" alt="Lorem Ipsum">
+                        <div>
+                            <a>News</a>
+                        </div>
                     </div>
                     <div class="text_container">
                         <h3>Title</h3>
@@ -340,9 +332,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="news_it">
+                <div class="news_it newsshadow_2">
                     <div class="image_container">
-                        <img src="Images/upd2-img.jpg" alt="Lorem Ipsum">
+                        <img src="Images/upd2-img.jpg" alt="Lorem Ipsum" class="banner_grad">
+                        <div>
+                            <a>News</a>
+                        </div>
                     </div>
                     <div class="text_container">
                         <h3>Title</h3>
@@ -358,9 +353,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="news_cybers">
+                <div class="news_cybers newsshadow_3">
                     <div class="image_container">
                         <img src="Images/upd1-img.jpg" alt="Lorem Ipsum">
+                        <div>
+                            <a>News</a>
+                        </div>
                     </div>
                     <div class="text_container">
                         <h3>Title</h3>
@@ -381,7 +379,7 @@
 
 
         <section class="logo-background">
-            <div class="content-wrapper logo_wrapper">
+            <div class="content-wrapper content-sizing logo_wrapper">
                 <div class="image_box_busseys tooltip">
                     <span class="tooltiptext">
                         <h3>Busseys</h3>
@@ -422,22 +420,22 @@
         </section>
 
         <div class="form-background">
-            <div class="form-wrapperout">
+            <div class="form-wrapperout content-wrapper content-sizing">
                 <div class="form-content">
                     <div class="form-title">
                     <h2>Email Newsletter Sign-up</h2>
                     </div>
                     <div class="form-wrapper">
                     <form>
-                        <div class="input_name">
+                        <div class="input_name query_form_n">
                             <label for="name" style="font-weight: bold;">Your Name</label><span class="required">*</span>
                             <input type="text" id="name" class="user_name"></textarea><br>
                         </div>
-                        <div class="input_email">
+                        <div class="input_email query_form_e">
                             <label for="email" style="font-weight: bold; margin-top: 30px;">Your Email</label><span class="required">*</span>
                             <input type="email" id="email" class="user_email"></textarea><br>
                         </div>
-                        <div class="input_checkbox">
+                        <div class="input_checkbox query_form_c">
                             <span class="user_checkbox"></span>
                             <span class="checkbox_text">Please tick this box if you wish to recieve marketing infomation from us. Please see our <a href="#" style="color: black;">Privacy Policy</a> for more information on how we use your data.</span>
                         </div>
@@ -452,7 +450,7 @@
 
         <footer>
             <div class="content-wrapper">
-                <div class="footer-content">
+                <div class="footer-content content-sizing">
                     <div class="footer-contact">
                         <h4>Contact Us</h4>
                         <ul class="footer-list">

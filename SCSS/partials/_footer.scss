@@ -16,6 +16,9 @@ footer{
         padding: 47px 0px 43px;
         flex-wrap: wrap;
         height: 100%;
+        @media (min-width:1218px){
+            flex-direction: row;
+        }
     }
     &-contact{
         padding: 0px 15px;

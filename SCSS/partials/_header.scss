@@ -39,7 +39,7 @@
         }
     }
     @media (min-width:1208px){
-        width: 80vw;
+        // width: 80vw;
     }  
 }
 
@@ -134,10 +134,15 @@
     padding: 2.5px 10px 2.5px 10px;
     color: white;
     height: 56px;
-    margin-right: -14px;
+    margin-right: 40px;
+    margin-bottom: 10px;
     &:hover{
         background-color: #22242e;
         cursor: grab;
+    }
+    @media (min-width:768px){
+        margin-right: -14px; 
+        margin-bottom: 0px;
     }
 }
 
@@ -159,11 +164,13 @@
     border: none;
     color: $grey;
     margin-bottom: 10px;
+    margin-right: 20px;
     &:hover{
         cursor: not-allowed;
     }
     @media (min-width:768px){
         display: none;
+        margin-right: none;
     }
 }
 
@@ -193,6 +200,7 @@
     border-top: 1px solid $lightgrey2;
     border-left: 1px solid $lightgrey2;
     border-bottom: 1px solid $lightgrey2;
+    border-right: none;
     border-radius: 2px 0px 0px 2px;
     font-size: 17px;
     width: 295px;
@@ -224,6 +232,7 @@
     border-top: 1px solid $lightgrey2;
     border-right: 1px solid $lightgrey2;
     border-bottom: 1px solid $lightgrey2;
+    border-left: none;
     border-radius: 0px 2px 2px 0px;
     height: 47px;
     cursor: pointer;
