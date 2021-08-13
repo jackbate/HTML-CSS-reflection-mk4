@@ -8,7 +8,7 @@
 
         <title>Home| Netmatters</title>
         <!-- Link to stylesheet -->
-        <link rel="stylesheet" type="text/css" href="CSS/style2.css">
+        <link rel="stylesheet" type="text/css" href="SCSS/style2.css">
 
         <!-- This is the link to google fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,6 +17,15 @@
         <script src="https://kit.fontawesome.com/b466982dd8.js" crossorigin="anonymous"></script>
         <!-- Normalize stylesheet -->
         <link rel="stylesheet" href="css/normalize.css">
+        <!-- Splide js link -->
+        <script src="splide/splide.min.js"></script>
+        <!-- Splide css link -->
+        <link rel="stylesheet" href="splide/splide.min.css">
+        <script>
+            document.addEventListener( 'DOMContentLoaded', function () {
+                new Splide( '.splide' ).mount();
+            } );
+        </script>
     </head>
 
     <body>
@@ -49,10 +58,20 @@
                         <button class="phone_btn">
                             <i class="fas fa-phone-volume"></i>
                         </button>
-                        <button type="submit" class="menu_btn">
-                            <i class="fas fa-bars"></i>
-                            <p style="margin: 0px;">menu</p>
-                        </button>
+                        
+                        <a class="menu_btn" onclick="myFunction(this)">
+                            <div class="container" >
+                              <div class="bar1"></div>
+                              <div class="bar2"></div>
+                              <div class="bar3"></div>
+                            </div>
+                            <div>Menu</div>
+                        </a>
+                        <script>
+                            function myFunction(x) {
+                                x.classList.toggle("change");
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
@@ -84,7 +103,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="hover-dropdown nav_it nav_ithover" id="nav_it">
+                <li class="hover-dropdown nav_it nav_ithover">
                     <a href="#" id="nav_it" class="nav_txtdec">
                         <p>
                             <i class="fas-1 fa-desktop fas icn_it"></i><br>
@@ -207,21 +226,164 @@
             </ul>
         </div>
 
-        <section class="banner">
-            <div class="tint">
-                <div class="content-wrapper content-sizing">
-                    <div class="banner-section">
-                        <div class="banner-text">
-                            <h1>Web design</h1>
-                            <p>For businesses looking to make a strong<br> and effective first impression</p>
+        
+        
+        <div class="splide">
+            <div class="splide_arrows">
+                <button class="splide_arrow"></button>
+            </div>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <div class="tint">
+                                <div class="banner-section-1">
+                                    <div class="banner-text positioning-web">
+                                        <h1>Web design</h1>
+                                        <p>For businesses looking to make a strong<br> and effective first impression.</p>
+                                    </div>
+                                    <div class="banner-btn banbtn_web">
+                                        <a href="#">Find out more <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="banner-btn">
-                            <a href="#" class="btn banbtn">Find out more <i class="fas fa-arrow-right"></i></a>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <div class="tint">
+                                <div class="banner-section-2">
+                                    <div class="banner-text positioning-it">
+                                        <h1>IT Support</h1>
+                                        <p>Fast and cost-effective IT support<br> services for your business.</p>
+                                    </div>
+                                    <div class="banner-btn banbtn_it">
+                                        <a href="#">Find out more <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <div class="tint">
+                                <div class="banner-section-3">
+                                    <div class="banner-text positioning-telecoms">
+                                        <h1>Telecoms Services</h1>
+                                        <p>A new approach to connectivity, see how<br> we can help your business.</p>
+                                    </div>
+                                    <div class="banner-btn banbtn_telecoms">
+                                        <a href="#">Find out more <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <div class="tint">
+                                <div class="banner-section-4">
+                                    <div class="banner-text positioning-bespoke">
+                                        <h1>Bespoke Software</h1>
+                                        <p>Bring your business together<br> with solutions that grow with you.</p>
+                                    </div>
+                                    <div class="banner-btn banbtn_bespoke">
+                                        <a href="#">Find out more <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <div class="tint">
+                                <div class="banner-section-5">
+                                    <div class="banner-text positioning-digital">
+                                        <h1>Digital marketing</h1>
+                                        <p>Generating you new buisness through<br> results-driven marketing activities.</p>
+                                    </div>
+                                    <div class="banner-btn banbtn_digital">
+                                        <a href="#">Find out more <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <div class="tint">
+                                <div class="banner-section-6">
+                                    <div class="banner-text positioning-cybers">
+                                        <h1>Cyber Security</h1>
+                                        <p>Keeping businesses and their customers<br> Sensitive information protected.</p>
+                                    </div>
+                                    <div class="banner-btn banbtn_cybers">
+                                        <a href="#">Find out more <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="splide_progress">
+                <div class="splide_progress_bar">
                 </div>
             </div>
-        </section>
+        </div>
+        
+        <script>
+            new Splide('.splide').mount();
+            
+            var splide = new Splide( '#splide' );
+
+            splide.on( 'autoplay:playing', function ( rateauto ) {
+                console.log( rate ); // 0-1
+            } );
+
+            splide.mount();
+        </script>
+
+        <!-- <section class="banner">
+            <div class="tint">
+                <div class="content-wrapper content-sizing">
+                    <div class="splide">
+                        <div class="splide_track">
+                            <ul class="splide_list">
+                                <li class="splide_slide">Slide 1</li>
+                                <li class="splide_slide">Slide 2</li>
+                                <li class="splide_slide">Slide 3</li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <!-- <div class="carousel">
+                        <div class="banner-section">
+                            <p>slide 1</p>
+                            <div class="banner-text">
+                                <h1>Web design</h1>
+                                <p>For businesses looking to make a strong<br> and effective first impression</p>
+                            </div>
+                            <div class="banner-btn">
+                                <a href="#" class="btn banbtn">Find out more <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="banner-section">
+                            <p>slide 2</p>
+                            <div class="banner-text">
+                                <h1>Web design</h1>
+                                <p>For businesses looking to make a strong<br> and effective first impression</p>
+                            </div>
+                            <div class="banner-btn">
+                                <a href="#" class="btn banbtn">Find out more <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="banner-section">
+                            <p>slide 3</p>
+                        </div>
+                    </div> -->
+                <!-- </div>
+            </div>
+        </section> -->
 
 
         <div class="services">
@@ -229,50 +391,50 @@
                 <div class="flexbox">
                     <div class="card_bespoke">
                         <i class="fab fa-uncharted circback"></i>
-                        <div class="icon_underline"></div>
                         <h3>Bespoke Software</h3>
+                        <div class="icon_underline"></div>
                         <p>Tailored software solutions to improve buisness productivity and online profits. Our expert team will ensure a software soltion.</p>
                         <a href="#">READ MORE</a>
                     </div>
                     <div class="card_it">
                         <i class="fas fa-desktop fa-2x circback itBtn"></i>
-                        <div class="icon_underline"></div>
                         <h3 >IT Support</h3>
+                        <div class="icon_underline"></div>
                         <p>Remotely managed IT services that is catered to your business needs, adds value and reduces cost.</p>
                         <a href="#">READ MORE</a>
                     </div>
                     <div class="card_digital">
                         <i class="far fa-chart-bar fa-2x circback digBtn"></i>
-                        <div class="icon_underline"></div>
                         <h3 >Digital Marketing</h3>
+                        <div class="icon_underline"></div>
                         <p>Driving brand awareness and ROI through creative digital marketing campaings. We review and monitor onlune performances.</p>
                         <a href="#">READ MORE</a>
                     </div>
                     <div class="card_telecoms">
                         <i class="fas fa-phone-alt fa-2x circback teleBtn"></i>
-                        <div class="icon_underline"></div>
                         <h3 >Telecoms Services</h3>
+                        <div class="icon_underline"></div>
                         <P>Stay connected with bespoke telecoms solutions when you need it most.</P>
                         <a href="#">READ MORE</a>
                     </div>
                     <div class="card_web">
                         <i class="fas fa-code fa-2x circback webBtn"></i>
-                        <div class="icon_underline"></div>
                         <h3 >Web Design</h3>
+                        <div class="icon_underline"></div>
                         <p>User-centric design for buisnesses looking to make a lasting impression.</p>
                         <a href="#">READ MORE</a>
                     </div>
                     <div class="card_cybers">
                         <i class="fas fa-shield-alt fa-2x circback cybBtn"></i>
-                        <div class="icon_underline"></div>
                         <h3 >Cyber Security</h3>
+                        <div class="icon_underline"></div>
                         <p>Ensruing your online buisness stay's secure 24/7, 265 days of the year.</p>
                         <a href="#">READ MORE</a>
                     </div>
                     <div class="card_web">
                         <i class="fas fa-graduation-cap fa-2x circback devBtn"></i>
-                        <div class="icon_underline"></div>
                         <h3 >Developer Training</h3>
+                        <div class="icon_underline"></div>
                         <p>Have you considered a career in web development but you aren't sure where to start?</p>
                         <a href="#">READ MORE</a>
                     </div>
@@ -287,14 +449,14 @@
                         <h3 class="ahead">Netmatters</h3>
                     </div>
                     <div class="marginbot">
-                        <p class="ap1">Netmatters Ltd is a leading web design, IT support and digital marketing agency based in Wymondum, Norfolk.</p>
+                        <p class="ap1"><b>Netmatters Ltd is a leading web design, IT support and digital marketing agency based in Wymondum, Norfolk.</b></p>
                             
                         <p>Founded in 2008 , we work with buisnesses from a variety of industries to gain new prospects, nurture existing leads and further grow their sales.</p>
 
                         <p>We provide cost effective, reliable solutions to a range of services; from bespoke  could-based management systems, workflow and IT solutions through to creative website  development and intergrated digital campaining.</p>
                     </div>
         
-                    <a href="#header" class="ourCult btn" id="ourCult" style="color: #333645;">OUR CULTURE</a>
+                    <a href="#header" class="ourCult btn" id="ourCult" style="color: #333645; padding:10px 15px;">OUR CULTURE<i class="fas">&#xf061;</i></a>
                 </div>
             </div>
         </section>
@@ -319,11 +481,11 @@
                     </div>
                     <div class="text_container">
                         <h3>Title</h3>
-                        <p>Sit eu tempor consectetur eu nisi deserunt magna eu exercitation. Occaecat minim eiusmod amet ut est aliqua consequat consectetur deserunt velit cillum dolor dolore enim. Laboris nulla enim esse consequat ut sunt adipisicing id. Veniam ex culpa excepteur elit velit. Culpa cupidatat duis et anim velit. Anim anim esse laborum officia commodo non cillum aute adipisicing id est dolore sit.</p>
+                        <p>Every month we celebrate the most notable of employees here at Netmatters. Each department head is a...</p>
                         <a href="" target="_blank">read more</a>
                         <div class="text_underline"></div>
                         <div class="publish_information">
-                            <img src="Images/netmatters-news-logo.png">
+                            <img src="Images/netmatters-news-logo.png" alt="netmatters news logo">
                             <div>
                                 <h4>Posted By Netmatters Ltd</h4>
                                 <p>5th March 2021</p>
@@ -340,11 +502,11 @@
                     </div>
                     <div class="text_container">
                         <h3>Title</h3>
-                        <p>Sit eu tempor consectetur eu nisi deserunt magna eu exercitation. Occaecat minim eiusmod amet ut est aliqua consequat consectetur deserunt velit cillum dolor dolore enim. Laboris nulla enim esse consequat ut sunt adipisicing id. Veniam ex culpa excepteur elit velit. Culpa cupidatat duis et anim velit. Anim anim esse laborum officia commodo non cillum aute adipisicing id est dolore sit.</p>
+                        <p>Salary Range £19,000 Hours 40 hours per week, Monday - Friday Location Wymondham, Norfolk What We Ar...</p>
                         <a href="" target="_blank">read more</a>
                         <div class="text_underline"></div>
                         <div class="publish_information">
-                            <img src="Images/netmatters-news-logo.png">
+                            <img src="Images/netmatters-news-logo.png" alt="netmatters news logo">
                             <div>
                                 <h4>Posted By Netmatters Ltd</h4>
                                 <p>5th March 2021</p>
@@ -361,11 +523,11 @@
                     </div>
                     <div class="text_container">
                         <h3>Title</h3>
-                        <p>Sit eu tempor consectetur eu nisi deserunt magna eu exercitation. Occaecat minim eiusmod amet ut est aliqua consequat consectetur deserunt velit cillum dolor dolore enim. Laboris nulla enim esse consequat ut sunt adipisicing id. Veniam ex culpa excepteur elit velit. Culpa cupidatat duis et anim velit. Anim anim esse laborum officia commodo non cillum aute adipisicing id est dolore sit.</p>
+                        <p>We’re celebrating the 50th birthday of one of our valued members of the team here at Netmatters, our...</p>
                         <a href="" target="_blank">read more</a>
                         <div class="text_underline"></div>
                         <div class="publish_information">
-                            <img src="Images/netmatters-news-logo.png">
+                            <img src="Images/netmatters-news-logo.png" alt="netmatters news logo">
                             <div>
                                 <h4>Posted By Netmatters Ltd</h4>
                                 <p>5th March 2021</p>
@@ -380,40 +542,40 @@
         <section class="logo-background">
             <div class="content-wrapper content-sizing logo-wrapper">
                 <div class="image_box_busseys tooltip">
-                    <span class="tooltiptext">
+                    <div class="tooltiptext">
                         <h3>Busseys</h3>
                         <div class="logo_line"></div>
                         <p>One of the UK's leading Ford dealerships.</p>
-                    </span>
-                    <img src="Images/logo1-bw.jpg" id="logo1bw" class="image_busseys">  
-                    <img src="Images/logo1.png" id="logo1" class="image_busseys">
+                    </div>
+                    <img src="Images/logo1-bw.jpg" id="logo1bw" class="image_busseys" alt="busseys logo">  
+                    <img src="Images/logo1.png" id="logo1" class="image_busseys" alt="busseys logo">
                 </div>
                 <div class="image_box_crane tooltip">
-                    <span class="tooltiptext" style="margin-left: -27px;">
+                    <div class="tooltiptext" style="margin-left: -27px;">
                         <h3>Crane Garden Builders</h3>
                         <div class="logo_line"></div>
                         <p>Leading manufacturer and supplier of high-end garden rooms, summerhouses, workshops and sheds in the UK.</p>
-                    </span>
-                    <img src="Images/logo2-bw.jpg" id="logo2bw" class="image_crane">
-                    <img src="Images/logo2.png" id="logo2" class="image_crane">
+                    </div>
+                    <img src="Images/logo2-bw.jpg" id="logo2bw" class="image_crane" alt="crane logo">
+                    <img src="Images/logo2.png" id="logo2" class="image_crane" alt="crane logo">
                 </div>
                 <div class="image_box_beat tooltip">
-                    <span class="tooltiptext" style="margin-left: -100px;">
+                    <div class="tooltiptext" style="margin-left: -100px;">
                         <h3>Beat</h3>
                         <div class="logo_line"></div>
                         <p>The UK's eating disorder charity founded in 1989.</p>
-                    </span>
-                    <img src="Images/logo3-bw.jpg" id="logo3bw" class="image_beat">
-                    <img src="Images/logo3.png" id="logo3" class="image_beat">
+                    </div>
+                    <img src="Images/logo3-bw.jpg" id="logo3bw" class="image_beat" alt="beat logo">
+                    <img src="Images/logo3.png" id="logo3" class="image_beat" alt="beat logo">
                 </div>
                 <div class="image_box_northerndiver tooltip">
-                    <span class="tooltiptext" style="margin-left: 0%;">
+                    <div class="tooltiptext" style="margin-left: 0%;">
                         <h3>Northern Diver</h3>
                         <div class="logo_line"></div>
                         <p>Global water based equipment manufacturers for sport, military, commercial and rescue businesses.</p>
-                    </span>
-                    <img src="Images/logo4-bw.jpg" id="logo4bw" class="image_northerndiver">
-                    <img src="Images/logo4.png" id="logo4" class="image_northerndiver">
+                    </div>
+                    <img src="Images/logo4-bw.jpg" id="logo4bw" class="image_northerndiver" alt="northern diver logo">
+                    <img src="Images/logo4.png" id="logo4" class="image_northerndiver" alt="northern diver logo">
                 </div>
             </div>
         </section>
@@ -428,15 +590,21 @@
                     <form>
                         <div class="input_name query_form_n">
                             <label for="name" style="font-weight: bold;">Your Name</label><span class="required">*</span>
-                            <input type="text" id="name" class="user_name"></textarea><br>
+                            <input type="text" id="name" class="user_name"><br>
                         </div>
                         <div class="input_email query_form_e">
                             <label for="email" style="font-weight: bold; margin-top: 30px;">Your Email</label><span class="required">*</span>
-                            <input type="email" id="email" class="user_email"></textarea><br>
+                            <input type="email" id="email" class="user_email"><br>
                         </div>
-                        <div class="input_checkbox query_form_c">
-                            <span class="user_checkbox"></span>
+                        <!-- <div class="input_checkbox query_form_c">
+                            <input type="checkbox" class="user_checkbox">
                             <span class="checkbox_text">Please tick this box if you wish to recieve marketing infomation from us. Please see our <a href="#" style="color: black;">Privacy Policy</a> for more information on how we use your data.</span>
+                        </div> -->
+                        <div>
+                            <label class="check_container checkbox_text inout_checkbox query_form_c">Please tick this box if you wish to recieve marketing infomation from us. Please see our <a href="#" style="color: black;">Privacy Policy</a> for more information on how we use your data.
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
                         <div>
                             <button name="submit" class="submit_btn">Subscribe</button>
@@ -496,6 +664,49 @@
                 </div>
             </div>
         </footer>
+        <section class="accreditations-background">
+            <div class="content-wrapper content-sizing accreditations-wrapper">
+                <div class="googlepartner">
+                    <img src="Images/PartnerBadgeWithoutSpecializations.png" id="googlepartner" class="image_googlepartner" alt="google partner">
+                </div>
+                <div class="smp">
+                    <img src="Images/silver-microsoft-partner.jpg" id="smp" class="image_smp" alt="silver microsoft partner">  
+                </div>
+                <div class="image_box_fut50">
+                    <img src="Images/future-50-bw.jpg" id="fut50bw" class="image_fut50" alt="future 50 member logo">
+                    <img src="Images/future-50.jpg" id="fut50" class="image_fut50" alt="future 50 memeber logo">
+                </div>
+                <div class="image_box_qms">
+                    <img src="Images/qms-bw.jpg" id="qmsbw" class="image_qms" alt="qms logo">
+                    <img src="Images/qms.jpg" id="qms" class="image_qms" alt="qms logo">
+                </div>
+                <div class="image_box_carbchart">
+                    <img src="Images/norfolk-carbon-charter-bw.jpg" id="carbchartbw" class="image_carbchart" alt="norfolk carbon charter silver logo">
+                    <img src="Images/norfolk-carbon-charter.jpg" id="carbchart" class="image_carbchart" alt="norfolk carbon charter silver logo">
+                </div>
+                <div class="image_box_ifg">
+                    <img src="Images/investing-in-future-growth-bw.jpg" id="ifgbw" class="image_ifg" alt="investing in future growth winner">
+                    <img src="Images/investing-in-future-growth.jpg" id="ifg" class="image_ifg" alt="investing in furutre growth winner">
+                </div>
+                <div class="image_box_prt">
+                    <img src="Images/princess-royal-training-bw.jpg" id="prtbw" class="image_prt" alt="princess royal training award">
+                    <img src="Images/princess-royal-training.jpg" id="prt" class="image_prt" alt="princess royal training award">
+                </div>
+                <div class="image_box_carbchart">
+                    <img src="Images/skills-of-tomorrow-bw.jpg" id="sotbw" class="image_sot" alt="skills of tomorrow award winner">
+                    <img src="Images/skills-of-tomorrow.jpg" id="sotbw" class="image_sot" alt="skills of tomorrow award winner">
+                </div>
+                <div class="image_box_ppc">
+                    <img src="Images/PPC_logo-bw.jpg" id="ppcbw" class="image_ppc" alt="prompt payment code logo">
+                    <img src="Images/PPC_logo.jpg" id="ppc" class="image_ppc" alt="prompt payment code logo">
+                </div>
+            </div>
+        </section>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="/js/_js.js"></script>
+
     </body>
 
 </html>

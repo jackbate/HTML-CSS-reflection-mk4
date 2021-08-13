@@ -8,14 +8,19 @@
     background-position: right;
     width: 100%;
     text-align: start;
-    width: 100%;
 }
 
 .aboutContent{
-    padding: 50px 15px;
+    padding: 50px 15px 90px;
     color: $secondary;
     font-size: 16px;
     text-align: start;
+    line-height: 1.875rem;
+    i{
+        margin-left: 12px;
+        margin-right: -4px;
+        // font-weight: 400;
+    }
 }
 
 .aboutdesc{
@@ -32,13 +37,14 @@
     }
 }
 
-.ourCult::after{
-    content: ' \2192';
-}
+// .ourCult::after{
+//     content: ' &#xf061;';
+// }
 
 .ahead{
     font-size: 36px;
     font-weight: 500;
+    padding: 10px 15px;
 }
 
 .marginbot{

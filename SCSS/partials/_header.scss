@@ -127,6 +127,9 @@
 }
 
 .menu_btn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: $grey;
     border: 1px solid $grey;
     border-radius: 3px;
@@ -136,9 +139,11 @@
     height: 56px;
     margin-right: 40px;
     margin-bottom: 10px;
+    width: 60px;
+    padding: 0 auto;
     &:hover{
         background-color: #22242e;
-        cursor: grab;
+        cursor: pointer;
     }
     @media (min-width:768px){
         margin-right: -14px; 
@@ -146,15 +151,63 @@
     }
 }
 
-.menu_btn i{
-    margin-bottom: 3px;
-    font-size: 20px;
+// .menu_btn i{
+//     margin-bottom: 3px;
+//     font-size: 20px;
+// }
+
+// .burger-box{
+//     display: inline-block;
+//     &:hover{
+//         cursor: pointer;
+//     }
+    
+// }
+
+.container{
+    display: inline-block;
+    cursor: pointer;
+    width: 33px;
+    height: 19px;
 }
 
-.menu_btn p{
+.bar1, .bar2, .bar3 {
+    width: 33px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-225deg)translate(7px, -7px);
+    transform: rotate(-225deg)translate(7px, -7px);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(225deg) translate(6px, 5px) ;
+    transform: rotate(225deg) translate(6px, 5px) ;
+  }
+
+// .burger-icon{
+//     height: 3px;
+//     width: 33px;
+//     background-color: #fff;
+// }
+
+.menu_btn > div{
     font-size: 0.75rem;
-    margin: 0px;
     text-transform: uppercase;
+    &:nth-child(2){
+        margin-top: 15px;
+    }
 }
 
 .phone_btn{
@@ -207,6 +260,14 @@
     height: 47px;
     float: left;
     background-color: rgba(0,0,0,.1);
+    transition: 0.25s;
+    &:focus{
+        border: #5bc0de;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6); 
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
+        transition: 0.25s;
+    }
     @media (min-width:768px){
         width: 174px;
         height: 56px;
@@ -216,7 +277,7 @@
     @media (min-width:998px){
         display: none;
         width: 240px;
-        border-radius: 5px 0px 0px 5px;
+        // border-radius: 5px 0px 0px 5px;
     }
     @media (min-width:1208px){
         display: inherit;

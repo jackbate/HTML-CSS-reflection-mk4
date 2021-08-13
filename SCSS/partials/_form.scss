@@ -13,6 +13,12 @@
     background: $lightgrey;
 }
 
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .form{
     &-background{
         background-color: #ddd;
@@ -28,13 +34,16 @@
     &-title{
         font-size: 1.5rem;
         font-weight: 400;
+        h2{
+            font-weight: 400;
+        }
     }
     &-wrapper{
         display: flex;
         flex-wrap: wrap;
     }
     &-wrapperout{
-        padding: 50px 30px;
+        padding: 20px 30px 50px;
     }
 }
 
@@ -44,12 +53,24 @@
 
 .query_form{
         &_n{
+            @media (min-width: 768px){
+                width: 100%;
+                margin-right: 0;
+            }
+            @media (min-width:998px){
+                margin-right: 20px;
+            }
             @media (min-width:1218px){
+                margin-right: 0;
                 width:45%;
                 float: left;
             }
         }
         &_e{
+            @media (min-width: 768px){
+                width: 100%;
+                margin-right: 0;
+            }
             @media (min-width:1218px){
                 width: 45%;
                 float: left;
@@ -68,22 +89,30 @@
         width: 100%;
         height: 47px;
         margin-bottom: 30px;
-        // @media (min-width:1218px){
-        //     width: 50%;
-        //     float: left;
-        // }
+        &:focus{
+            border: #5bc0de;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6); 
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
+            transition: 0.25s;
+        }
+        
     }
     &_email{
         width: 100%;
         height: 47px;
         margin-bottom: 30px;
-        // @media (min-width:1218px){
-        //     width: 50%;
-        //     float: left;
-        // }
+        &:focus{
+            border: #5bc0de;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6); 
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
+            transition: 0.25s;
+        }
+        
     }
     &_checkbox{
-        display: inline-block;
+        // display: inline-block;
         background-color: #ddd;
         border: 3px solid $grey;
         border-radius: 3px;
@@ -91,8 +120,9 @@
         width: 32px;
         float: left;
         margin-right: 20px;
-        &:active{
+        &input:checked ~ .checkmark:after{
             background-color: $grey;
+            color: white;
         }
     }
 }
@@ -130,7 +160,91 @@
         margin-top: 40px;
     }
     @media (min-width:1218px){
-        margin-top: 15px;
+        margin-top: 60px;
         float: left;
     }
+    &:hover{
+        background-color: #22242e;
+        cursor: pointer;
+    }
 }
+
+///////////test code
+
+.check_container {
+    display: block;
+    position: relative;
+    padding-left: 60px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 80%;
+    float: right;
+    letter-spacing: 1px;
+    line-height: 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    @media (min-width:768px){
+        float: left;
+    }
+    @media (min-width:1218px){
+        margin-top: -8px;
+    }
+  }
+  
+  /* Hide the browser's default checkbox */
+  .check_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ddd;
+    border: 3px solid $grey;
+    border-radius: 3px;
+    height: 32px;
+    width: 32px;
+    float: left;
+    margin-right: 20px;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .check_container input:checked ~ .checkmark {
+    background-color: $grey;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .check_container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .check_container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

@@ -24,6 +24,10 @@
                 border-radius: 5px;
                 text-align: center;
                 height: 334.8px;
+                
+                &:hover{
+                    cursor: pointer;
+                }
 
                 i {
                     display: block;
@@ -41,9 +45,17 @@
                     background-color: $grey;
                     width: 30px;
                     height: 3px;
-                    margin: 20px auto 0;
+                    margin: 0px auto 0 ;
                 }
                 
+                h3{
+                    font-weight: 500;
+                }
+                
+                p{
+                    font-weight: 200;
+                }
+
                 h3, p {
                     color: $grey;
                 }
@@ -58,9 +70,10 @@
                     height: 46px;
                     line-height: 46px;
                     text-decoration: none;
-                    border-radius: 5px;
-                    margin: 0 auto;
+                    border-radius: 3px;
+                    margin: 0 auto 10px;
                     font-size: 17px;
+                    cursor: pointer;
                 }
                 
                 &:hover {
@@ -81,7 +94,6 @@
 @media (min-width: 768px) {
     .services {
         .content-wrapper {
-            // border: solid 1px red;
             width: 750px;
             margin-left: auto;
             margin-right: auto;

@@ -37,9 +37,9 @@
 .content-sizing{
     margin: 0 auto;
     height: 100%;
+    width:  100vw;
     @media  (min-width: 998px){
-        width: 80vw;
-        //80vw
+        width: 100vw;
         justify-content: space-evenly;
     }
     @media (min-width: 1218px){

@@ -10,6 +10,10 @@
     &-wrapper{
         padding: 50px;
         max-width: 1200px;
+        @media (min-width:768px){
+            padding: 15px;
+            max-width: 100%;
+        }
         @media (min-width: 993px){
             margin: 0 15px;
             padding: 0 15px;
@@ -54,9 +58,6 @@
         @media (min-width: 1218px){
             width: 188px;
         }
-        // img {
-
-        // }
     }
     &crane{
         width: 184.95px;
@@ -67,9 +68,6 @@
         @media (min-width: 1218px){
             width: 287px;
         }
-        // img{
-
-        // }
     }
     &beat{
         width: 46.4px;
@@ -80,9 +78,6 @@
         @media (min-width: 1218px){
             width: 72px;
         }
-        // img{
-
-        // }
     }
     &northerndiver{
         width: 207.5px;
@@ -93,9 +88,6 @@
         @media (min-width: 1218px){
             width: 322px;
         }
-        // img{
-
-        // }
     }
 }
 
@@ -119,6 +111,11 @@
     bottom: 170%;
     left: 10%;
     margin-left: -60px;
+
+    p{
+        font-size: 13px;
+        line-height: 1.5rem;
+    }
 }
 
 .tooltip2 .tooltiptext2  {
@@ -139,7 +136,11 @@
     margin-left: -60px;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+
+.tooltip:hover .tooltip:nth-child(1)::after{
     visibility: visible;
 }
 
@@ -148,4 +149,76 @@
     background-color: white;
     width: 25px;
     height: 3px;
+}
+
+.tooltip .tooltiptext:nth-child(1)::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 30px;
+    border-style: solid;
+    border-color: $grey transparent transparent transparent;
+    bottom: -60px;
+    left: 100px;
+}
+
+.tooltip .tooltiptext:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 30px;
+    border-style: solid;
+    border-color: $grey transparent transparent transparent;
+    top: -49px;
+    left: 100px;
+}
+
+.tooltip .tooltiptext:nth-child(3)::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 30px;
+    border-style: solid;
+    border-color: $grey transparent transparent transparent;
+    top: -49px;
+    left: 10px;
+}
+
+.tooltip .tooltiptext:nth-child(4)::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 30px;
+    border-style: solid;
+    border-color: $grey transparent transparent transparent;
+    top: -49px;
+    left: 132px;
+}
+
+// .tooltip > .tooltip::after{
+//     visibility: visible;
+// }
+
+///////////////////accreditations logo's
+
+.accreditations{
+    &-background{
+        height: 300px;
+        padding-top: 30px;
+    }
+    &-wrapper{
+        width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        & > div{
+            padding: 0px 50px;
+        }
+    }
+
 }
