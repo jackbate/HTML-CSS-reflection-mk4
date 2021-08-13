@@ -25,14 +25,25 @@
     
 }
 
+.header-logo{
+    margin-left: 8px;
+    @media(min-width:768px){
+        margin-left: 0;
+    }
+}
+
 .header-layout{
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 15px 20px;
+    padding-left: 20px;
+    padding-right: 0px;
+    margin-left: 10px;
+    padding-top: 15px;
     @media (min-width:768px){
+        padding: 15px 20px;
         &>*{
             margin-top: auto;
             margin-bottom: auto;
@@ -137,7 +148,7 @@
     padding: 2.5px 10px 2.5px 10px;
     color: white;
     height: 56px;
-    margin-right: 40px;
+    margin-right: 30px;
     margin-bottom: 10px;
     width: 60px;
     padding: 0 auto;
@@ -218,12 +229,14 @@
     color: $grey;
     margin-bottom: 10px;
     margin-right: 20px;
+    margin-left: 6px;
     &:hover{
         cursor: not-allowed;
     }
     @media (min-width:768px){
         display: none;
         margin-right: none;
+        margin-left: 0;
     }
 }
 
@@ -239,9 +252,11 @@
 .header-search{
     order: 1;
     width: 375px;
+    margin-bottom: 20px;
     @media (min-width:768px){
         order: 0;
         width: 238px;
+        margin-bottom: auto;
     }
     @media (min-width:1208px){
         width: 304px;

@@ -24,7 +24,10 @@
 
 .positioning{
     &-web{
-        margin-left: -207.65px;
+        margin-left: -189.125px;
+        @media(min-width:768px){
+            margin-left: -207.65px;
+        }
         @media (min-width:998px){
             margin-left: 0px;
         }
@@ -36,25 +39,44 @@
         }
     }
     &-telecoms{
-        margin-left: -237.9665px;
+        width: 350px;
+        margin-left: -175px;
+        margin-bottom: 20px;
+        @media(min-width:768px){
+            margin-left: -237.9665px;
+            width: fit-content;
+        }
         @media (min-width:998px){
             margin-left: 0px;
         }
     }
     &-bespoke{
-        margin-left: 234.7085px;
+        margin-left: -182.8085px;
+        @media(min-width:768px){
+            margin-left: -234.7085px;
+        }
         @media (min-width:998px){
             margin-left: 0px;
         }
     }
     &-digital{
-        margin-left: -229.325px;
+        width: 365px;
+        margin-left: -182.5px;
+        @media(min-width:768px){
+            width: fit-content;
+            margin-left: -229.325px;
+        }
         @media (min-width:998px){
             margin-left: 0px;
         }
     }
     &-cybers{
-        margin-left: -209.85px;
+        width: 365px;
+        margin-left: -182.5px;
+        @media (min-width:768px){
+            width: fit-content;
+            margin-left: -209.85px;
+        }
         @media (min-width:998px){
             margin-left: 0px;
         }
@@ -159,7 +181,7 @@
 
 
 .banner-btn{
-    top: 69%;
+    top: 74%;
     left: 50%;
     margin-left: -109px;
     position: absolute;
@@ -348,5 +370,7 @@ ul.splide_pagination:nth-child(5){
     margin-top: -18px;
 }
 
-
+.splide_arrow{
+    visibility: hidden;
+}
 
