@@ -1570,8 +1570,8 @@ ul.splide_pagination:nth-child(5) {
 .dropdown-display > li li::after {
   content: "";
   position: absolute;
-  right: -33px;
-  top: 9px;
+  right: -46px;
+  top: 6px;
   margin: auto;
   width: 9px;
   height: 2px;
