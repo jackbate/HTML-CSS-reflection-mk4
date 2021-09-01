@@ -20,6 +20,9 @@
         text-align: left;
         left: 10vw;
     }
+    @media (min-width: 1218px){
+        left: 20.5vw;
+    }
 }
 
 .positioning{
@@ -193,6 +196,10 @@
     @media (min-width:998px){
         text-align: left;
         left: 10vw;
+    }
+    @media (min-width: 1218px){
+        left: 20.5vw;
+        top: 58%;
     }
 }
     

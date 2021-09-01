@@ -4,14 +4,20 @@ footer{
     height: 100%;
     h4{
         text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1rem;
     }
     @media (min-width:768px){
         height: 568px;
+    }
+    @media (min-width:1218px){
+        height: 350px;
     }
 }
 
 .footer{
     &-content{
+        font-size: 0.825rem;
         display: flex;
         flex-direction: row;
         color: white;
@@ -31,6 +37,11 @@ footer{
         display: flex;
         flex-direction: column;
         padding: 0px 15px;
+        a{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
         &-dec{
             text-decoration: none;
             color: white;
@@ -46,13 +57,18 @@ footer{
     &-site{
         text-decoration: none;
         padding: 0px 15px;
-
+        a{
+            text-transform: capitalize;
+            &:hover{
+                text-decoration: underline; 
+            }
+        }
     }
     &-social{
         padding: 0px 15px;
         display: flex;
         flex-direction: column;
-        width: 250px;
+        width: 140px;
         &-facebook{
             background: transparent;
             background-color: rgba(0, 0, 0, .25);
@@ -64,7 +80,7 @@ footer{
             text-decoration: none;
             width: 104.5px;
             height: 55px;
-            margin-right: 5px;
+            margin-bottom: 10px;
             &:hover{
                 background-color: #3b5998;
             }
@@ -82,7 +98,6 @@ footer{
             text-decoration: none;
             width: 104.5px;
             height: 55px;
-            margin-left: 5px;
             &:hover{
                 background-color: #1DA1F2;
             }
@@ -106,9 +121,9 @@ footer{
     }
     &-sbutton{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-
+        align-items: center;
     }
     &-list{
         list-style-type: none;
