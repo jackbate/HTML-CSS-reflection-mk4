@@ -211,6 +211,13 @@ form{
     }
   }
   
+.form-wrapper > form:nth-child(1) > div:nth-child(3){
+    margin-left: -78px;
+    @media (min-width:768px){
+        margin-left: 0px;
+    }
+}
+
   /* Hide the browser's default checkbox */
   .check_container input {
     position: absolute;

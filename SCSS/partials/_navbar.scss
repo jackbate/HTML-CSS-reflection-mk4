@@ -129,7 +129,7 @@ ul{
 .dc{
     visibility: hidden;
     left: 0%;
-    width: 100vw;
+    width: calc(100vw - 15px);
     height: 45px;
     &_web{
         background-color: $primary;
