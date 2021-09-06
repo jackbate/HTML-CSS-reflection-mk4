@@ -16,7 +16,8 @@
         "partials/_universal.scss",
         "partials/_form.scss",
         "partials/_logos.scss",
-        "partials/_footer.scss"
+        "partials/_footer.scss",
+        "partials/_sidemenu.scss"
     ],
     "names": [],
     "file": "style2.css"
