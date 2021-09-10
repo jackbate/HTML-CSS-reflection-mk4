@@ -1338,6 +1338,37 @@ ul.splide_pagination:nth-child(5) {
   }
 }
 
+/* Style the header */
+#header {
+  height: 150px;
+}
+
+@media (min-width: 768px) {
+  #header {
+    height: 110px;
+  }
+}
+
+@media (min-width: 998px) {
+  #header {
+    height: 222px;
+  }
+}
+
+#header-container {
+  background: white;
+  z-index: 9999;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 #latestContainer {
   background-color: #fff;
   -webkit-box-pack: left;
@@ -3011,5 +3042,124 @@ footer h4 {
 .icon-des {
   padding: 10px;
   margin: 10px;
+}
+
+#main_nav {
+  display: none;
+}
+
+body {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/* The sidebar menu */
+.sidebar {
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+@media (min-width: 1208px) {
+  .sidebar {
+    width: 0;
+  }
+}
+
+/* The sidebar links */
+.sidebar a {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 51px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  width: 100%;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  letter-spacing: .4px;
+}
+
+.sidebar ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.sidebar li {
+  height: 51px;
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+  background-color: #333645;
+}
+
+.subMenu {
+  font-size: 13px;
+  background-color: #22242e;
+}
+
+.subMenu::before {
+  margin-right: 20px;
+  content: '\BB';
+}
+
+.subTitle {
+  font-size: 17px;
+  background-color: #333645;
+  opacity: 0.9;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover, a:active {
+  opacity: 1;
+}
+
+.sidebar a:hover .subtitle {
+  opacity: 1;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: transparent;
+}
+
+.nav-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style2.css.map */

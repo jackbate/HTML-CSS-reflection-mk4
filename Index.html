@@ -30,203 +30,253 @@
 
     <body>
         
-        <header>
-            <div class="nomargin_small">
-                <div class="content-sizing header-layout">
-                    <div class="header-logo">
-                        <a href="#header"><img src="./Images/Netmatterslogo.png" alt="Netmatters Logo" class="site-logo"></a>
-                    </div>
-                    <div>
-                        <div class="header-mainbtns">
-                            <div class="border">
-                                <a href="#" class="supBtn">
-                                    <i class="fas fa-mouse"></i> Support
-                                </a>
-                            </div>
-                            <div class="border">
-                                <a href="#" class="contBtn"><i class="far fa-paper-plane"></i> Contact</a>
+        <header id="header">
+            <div id="header-container">
+                <div class="nomargin_small">
+                    <div class="content-sizing header-layout">
+                        <div class="header-logo">
+                            <a href="#header"><img src="./Images/Netmatterslogo.png" alt="Netmatters Logo" class="site-logo"></a>
+                        </div>
+                        <div>
+                            <div class="header-mainbtns">
+                                <div class="border">
+                                    <a href="#" class="supBtn">
+                                        <i class="fas fa-mouse"></i> Support
+                                    </a>
+                                </div>
+                                <div class="border">
+                                    <a href="#" class="contBtn"><i class="far fa-paper-plane"></i> Contact</a>
+                                </div>
                             </div>
                         </div>
+                        <div class="header-search">
+                            <input type="text" placeholder="Search...">
+                            <button type="submit">
+                                <i class="fas fa-search search_icn"></i>
+                            </button>
+                        </div>
+                        <div class="header-actionBtn">
+                            <button class="phone_btn">
+                                <i class="fas fa-phone-volume"></i>
+                            </button>
+                            
+                            <a class="menu_btn" id="main" onclick="menuFunction(this), toggleSlideMenu(this);">
+                                <div class="container" >
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                                </div>
+                                <div>Menu</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="header-search">
-                        <input type="text" placeholder="Search...">
-                        <button type="submit">
-                            <i class="fas fa-search search_icn"></i>
-                        </button>
+                </div>
+           
+                <!-- testing code for menu -->
+                <div id="mySidebar" class="sidebar sidenav">
+                    <div class="nav-container">
+                        <div>
+                            <a class="subTitle">training</a>
+                            <ul>
+                                <li><a class="subMenu">Train for a career in tech</a></li>
+                                <li><a class="subMenu">scs frequently asked questions</a></li>
+                                <li><a class="subMenu">scion collaborators</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="subTitle">events</a>
+                            <ul>
+                                <li><a class="subMenu">buisness automation seminar</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="subTitle">our company</a>
+                            <ul>
+                                <li><a class="subMenu">our culture</a></li>
+                                <li><a class="subMenu">our team</a></li>
+                                <li><a class="subMenu">our careers</a></li>
+                                <li><a class="subMenu">our benefits</a></li>
+                                <li><a class="subMenu">it support great yarmouth</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="subTitle">our work</a>
+                            <ul>
+                                <li><a class="subMenu">case studies</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="subTitle">our knowledge</a>
+                            <ul>
+                                <li><a class="subMenu">guides</a></li>
+                                <li><a class="subMenu">news</a></li>
+                                <li><a class="subMenu">insights</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="subTitle">covid risk assesments</a>
+                        </div>
+                        <div>
+                            <a class="subTitle">Contact us</a>
+                            <ul>
+                                <li><a class="subMenu">Cambridge office</a></li>
+                                <li><a class="subMenu">wymondham office</a></li>
+                                <li><a class="subMenu">great yarmouth office</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="header-actionBtn">
-                        <button class="phone_btn">
-                            <i class="fas fa-phone-volume"></i>
-                        </button>
-                        
-                        <a class="menu_btn" onclick="myFunction(this)">
-                            <div class="container" >
-                              <div class="bar1"></div>
-                              <div class="bar2"></div>
-                              <div class="bar3"></div>
-                            </div>
-                            <div>Menu</div>
-                        </a>
-                        <script>
-                            function myFunction(x) {
-                                x.classList.toggle("change");
-                            }
-                        </script>
-                    </div>
+                </div>
+            
+                <div class="navbar-container" id="navbar">
+                    <ul class="content-sizing navbar-layout">
+                        <li class="hover-dropdown nav_web nav_webhover">
+                            <a href="#" id="nav_web" class="nav_txtdec">
+                                <p>
+                                    <i class="fas-1 fa-code fas icn_web"></i><br>
+                                </p>
+                                <p class="navtitle_des">
+                                    <small>Web</small><br>Design
+                                </p>
+                            </a>
+                            <ul class="dropdown-display dc dc_web">
+                                <li>
+                                    <div style="height: 100%;">
+                                        <ul class="dropdown-layout">
+                                            <li>Stylish Websites</li>
+                                            <li>Ecommerce Stores</li>
+                                            <li>Branding</li>
+                                            <li>Mobile Apps</li>
+                                            <li>Web Hosting</li>
+                                            <li>Pay Monthly Websites</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="hover-dropdown nav_it nav_ithover">
+                            <a href="#" id="nav_it" class="nav_txtdec">
+                                <p>
+                                    <i class="fas-1 fa-desktop fas icn_it"></i><br>
+                                </p>
+                                <p class="navtitle_des">
+                                    <small>IT</small><br>Support
+                                </p>
+                            </a>
+                            <ul class="dropdown-display dc dc_it">
+                                <li>
+                                    <div style="height: 100%;">
+                                        <ul class="dropdown-layout">
+                                            <li>Managed IT</li>
+                                            <li>Business IT</li>
+                                            <li>Office 365</li>
+                                            <li>Consultancy</li>
+                                            <li>Cloud Provider</li>
+                                            <li>Data Backup</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="hover-dropdown nav_telecoms nav_telecomshover">
+                            <a href="#" id="nav_telecoms" class="nav_txtdec">
+                                <p>
+                                    <i class="fas fa-phone-volume icn_telecoms"></i>
+                                </p>
+                                <p class="navtitle_des">
+                                    <small>Telecoms</small><br>Services
+                                </p>
+                            </a>
+                            <ul class="dropdown-display dc dc_telecoms">
+                                <li>
+                                    <div style="height: 100%;">
+                                        <ul class="dropdown-layout">
+                                            <li>Gigabit Voucher</li>
+                                            <li>Hosted Voip</li>
+                                            <li>Business Voip</li>
+                                            <li>Business Broadband</li>
+                                            <li>Leased Line</li>
+                                            <li>3cx Systems</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="hover-dropdown nav_bespoke nav_bespokehover">
+                            <a href="#" id="nav_bespoke" class="nav_txtdec">
+                                <p>
+                                    <i class="fas fa-th icn_bespoke"></i>
+                                </p>
+                                <p class="navtitle_des">
+                                    <small>Bespoke</small><br> Software
+                                </p>
+                            </a>
+                            <ul class="dropdown-display dc dc_bespoke">
+                                <li>
+                                    <div style="height: 100%;">
+                                        <ul class="dropdown-layout">
+                                            <li>Workflow Solutions</li>
+                                            <li>Automation</li>
+                                            <li>System Integration</li>
+                                            <li>Database management</li>
+                                            <li>Sharepoint</li>
+                                            <li>ERP</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="hover-dropdown nav_digital nav_digitalhover">
+                            <a href="#" id="nav_digital" class="nav_txtdec">
+                                <p>
+                                    <i class="fas fa-signal icn_digital"></i>
+                                </p>
+                                <p class="navtitle_des">
+                                    <small>Digital</small><br> Marketing
+                                </p>
+                            </a>
+                            <ul class="dropdown-display dc dc_digital">
+                                <li>
+                                    <div style="height: 100%;">
+                                        <ul class="dropdown-layout">
+                                            <li>Search (SEO)</li>
+                                            <li>Paid (PPC)</li>
+                                            <li>Conversion (CRO)</li>
+                                            <li>Email</li>
+                                            <li>Social Media</li>
+                                            <li>Content</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="hover-dropdown nav_cybers nav_cybershover">
+                            <a href="#" id="nav_cybers" class="nav_txtdec">
+                                <p>
+                                    <i class="fas fa-shield-alt icn_cybers"></i>
+                                </p>
+                                <p class="navtitle_des">
+                                    <small>Cyber</small><br> Security
+                                </p>
+                            </a>
+                            <ul class="dropdown-display dc dc_cybers">
+                                <li>
+                                    <div style="height: 100%;">
+                                        <ul class="dropdown-layout">
+                                            <li>Assesment</li>
+                                            <li>Management</li>
+                                            <li>Penetration Testing</li>
+                                            <li>Cyber Essentials</li>
+                                            <li>PCI/DSS</li>
+                                            <li>Hacker Prevention</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
-
-        <div class="navbar-container">
-            <ul class="content-sizing navbar-layout">
-                <li class="hover-dropdown nav_web nav_webhover">
-                    <a href="#" id="nav_web" class="nav_txtdec">
-                        <p>
-                            <i class="fas-1 fa-code fas icn_web"></i><br>
-                        </p>
-                        <p class="navtitle_des">
-                            <small>Web</small><br>Design
-                        </p>
-                    </a>
-                    <ul class="dropdown-display dc dc_web">
-                        <li>
-                            <div style="height: 100%;">
-                                <ul class="dropdown-layout">
-                                    <li>Stylish Websites</li>
-                                    <li>Ecommerce Stores</li>
-                                    <li>Branding</li>
-                                    <li>Mobile Apps</li>
-                                    <li>Web Hosting</li>
-                                    <li>Pay Monthly Websites</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="hover-dropdown nav_it nav_ithover">
-                    <a href="#" id="nav_it" class="nav_txtdec">
-                        <p>
-                            <i class="fas-1 fa-desktop fas icn_it"></i><br>
-                        </p>
-                        <p class="navtitle_des">
-                            <small>IT</small><br>Support
-                        </p>
-                    </a>
-                    <ul class="dropdown-display dc dc_it">
-                        <li>
-                            <div style="height: 100%;">
-                                <ul class="dropdown-layout">
-                                    <li>Managed IT</li>
-                                    <li>Business IT</li>
-                                    <li>Office 365</li>
-                                    <li>Consultancy</li>
-                                    <li>Cloud Provider</li>
-                                    <li>Data Backup</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="hover-dropdown nav_telecoms nav_telecomshover">
-                    <a href="#" id="nav_telecoms" class="nav_txtdec">
-                        <p>
-                            <i class="fas fa-phone-volume icn_telecoms"></i>
-                        </p>
-                        <p class="navtitle_des">
-                            <small>Telecoms</small><br>Services
-                        </p>
-                    </a>
-                    <ul class="dropdown-display dc dc_telecoms">
-                        <li>
-                            <div style="height: 100%;">
-                                <ul class="dropdown-layout">
-                                    <li>Gigabit Voucher</li>
-                                    <li>Hosted Voip</li>
-                                    <li>Business Voip</li>
-                                    <li>Business Broadband</li>
-                                    <li>Leased Line</li>
-                                    <li>3cx Systems</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="hover-dropdown nav_bespoke nav_bespokehover">
-                    <a href="#" id="nav_bespoke" class="nav_txtdec">
-                        <p>
-                            <i class="fas fa-th icn_bespoke"></i>
-                        </p>
-                        <p class="navtitle_des">
-                            <small>Bespoke</small><br> Software
-                        </p>
-                    </a>
-                    <ul class="dropdown-display dc dc_bespoke">
-                        <li>
-                            <div style="height: 100%;">
-                                <ul class="dropdown-layout">
-                                    <li>Workflow Solutions</li>
-                                    <li>Automation</li>
-                                    <li>System Integration</li>
-                                    <li>Database management</li>
-                                    <li>Sharepoint</li>
-                                    <li>ERP</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="hover-dropdown nav_digital nav_digitalhover">
-                    <a href="#" id="nav_digital" class="nav_txtdec">
-                        <p>
-                            <i class="fas fa-signal icn_digital"></i>
-                        </p>
-                        <p class="navtitle_des">
-                            <small>Digital</small><br> Marketing
-                        </p>
-                    </a>
-                    <ul class="dropdown-display dc dc_digital">
-                        <li>
-                            <div style="height: 100%;">
-                                <ul class="dropdown-layout">
-                                    <li>Search (SEO)</li>
-                                    <li>Paid (PPC)</li>
-                                    <li>Conversion (CRO)</li>
-                                    <li>Email</li>
-                                    <li>Social Media</li>
-                                    <li>Content</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="hover-dropdown nav_cybers nav_cybershover">
-                    <a href="#" id="nav_cybers" class="nav_txtdec">
-                        <p>
-                            <i class="fas fa-shield-alt icn_cybers"></i>
-                        </p>
-                        <p class="navtitle_des">
-                            <small>Cyber</small><br> Security
-                        </p>
-                    </a>
-                    <ul class="dropdown-display dc dc_cybers">
-                        <li>
-                            <div style="height: 100%;">
-                                <ul class="dropdown-layout">
-                                    <li>Assesment</li>
-                                    <li>Management</li>
-                                    <li>Penetration Testing</li>
-                                    <li>Cyber Essentials</li>
-                                    <li>PCI/DSS</li>
-                                    <li>Hacker Prevention</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        
         
         <div class="splide">
             <div class="splide_arrows">
@@ -658,9 +708,13 @@
             </div>
         </section>
 
+
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="/js/_js.js"></script>
+        <script  src="/js/_sidemenu.js"></script> 
+        <script src="/js/_stickyHeader.js"></script>
+        <script src="/js/_cookie.js"></script>
 
     </body>
 

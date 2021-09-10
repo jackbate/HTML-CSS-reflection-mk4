@@ -346,5 +346,28 @@
     }
 }
 
-///////////////////
-    
+//////////////////
+// this is the code being used to create the sticky header
+ /* Style the header */
+#header{
+    height: 150px;
+    @media (min-width: 768px){
+        height: 110px;
+    }
+    @media (min-width: 998px){
+        height: 222px;
+    } 
+}
+
+#header-container {
+    background: white;
+    z-index: 9999;
+    transition: 0.5s;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}

@@ -4,7 +4,8 @@
 //     });
 //   });
 
-function myFunction(x) {
+function menuFunction(x) {
     x.classList.toggle("change");
+    x.classList.toggle("menu-display");
 } 
   
