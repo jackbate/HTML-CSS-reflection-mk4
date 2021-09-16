@@ -116,6 +116,31 @@
         font-size: 13px;
         line-height: 1.5rem;
     }
+
+    // &:nth-child(1){
+    //     left: 64.1px;
+    //     @media (min-width:769px){
+    //         left: 10%;
+    //     }
+    // }
+    // &:nth-child(2){
+    //     left: -64.1px;
+    //     @media (min-width:769px){
+    //         left: 10%;
+    //     }
+    // }
+    // &:nth-child(3){
+    //     // left: 64.1px;
+    //     @media (min-width:769px){
+    //         left: 10%;
+    //     }
+    // }
+    // &:nth-child(4){
+    //     // left: 64.1px;
+    //     @media (min-width:769px){
+    //         left: 10%;
+    //     }
+    // }
 }
 
 .tooltip2 .tooltiptext2  {
@@ -161,6 +186,10 @@
     border-color: $grey transparent transparent transparent;
     bottom: -60px;
     left: 100px;
+    // left: 23.1px;
+    // @media (min-width:769px){
+    //     left: 100px;
+    // }
 }
 
 .tooltip .tooltiptext:nth-child(2)::after{
@@ -199,6 +228,36 @@
     left: 132px;
 }
 
+
+.image_box_busseys > div:nth-child(1){
+    left: 10.1px;
+    @media(min-width: 769px){
+        left: 10%;
+    }
+}
+
+.image_box_crane > div:nth-child(1){
+    left: -19.517px;
+    @media(min-width: 769px){
+        left: 10%;
+    }
+}
+.image_box_beat > div:nth-child(1){
+    left: -6.367px;
+    @media(min-width: 769px){
+        left: 10%;
+    }
+}
+.image_box_northerndiver > div:nth-child(1){
+    left: -29.25px;
+    @media(min-width: 769px){
+        left: 10%;
+    }
+}
+
+#logos{
+    justify-content: space-evenly;
+}
 // .tooltip > .tooltip::after{
 //     visibility: visible;
 // }
