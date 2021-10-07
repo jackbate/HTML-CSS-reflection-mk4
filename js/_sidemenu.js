@@ -10,7 +10,7 @@ function myFunction(mediaQuery) {
         console.log(menuSize)
       }
       
-var mediaQuery = window.matchMedia("(max-width: 700px)");
+var mediaQuery = window.matchMedia("(max-width: 992px)");
 myFunction(mediaQuery); // Call listener function at run time
 mediaQuery.addListener(myFunction); // Attach listener function on state changes 
 
@@ -20,11 +20,15 @@ function toggleSlideMenu(x){
         document.getElementById("mySidebar").style.width = menuSize;
         document.body.style.right = menuSize;
         document.body.style.position = "relative";
+        document.body.style.overflowY = "hidden";
+        document.getElementById('mySidebar').style.boxShadow = "0 0 0 10000px rgba(0,0,0,.50)";
     }
     else{
         document.getElementById("mySidebar").style.width = "0";
         document.body.style.right = "0";
         document.body.style.position = " ";
+        document.body.style.overflowY = "visible"
+        document.getElementById('mySidebar').style.boxShadow = "0 0 0 0 rgba(0,0,0,.50)";
     }
    }
 

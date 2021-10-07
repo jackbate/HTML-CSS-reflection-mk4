@@ -41,9 +41,9 @@ body{
 .content-sizing{
     margin: 0 auto;
     height: 100%;
-    width:  100vw;
+    width:  100%;
     @media  (min-width: 998px){
-        width: 100vw;
+        width: 100%;
         justify-content: space-evenly;
     }
     @media (min-width: 1218px){
