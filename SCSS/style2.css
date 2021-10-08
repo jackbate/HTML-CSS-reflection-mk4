@@ -3121,8 +3121,9 @@ footer h4 {
   z-index: 99999;
   border: 1px solid #999aa2;
   border-radius: 3px;
-  -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 10000px 10000px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10000px 10000px rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
 }
 
 .cookie-btn {
