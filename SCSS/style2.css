@@ -917,7 +917,13 @@ ul.splide_pagination:nth-child(5) {
 }
 
 #splide01 {
-  margin-top: -18px;
+  margin-top: 95px;
+}
+
+@media (min-width: 998px) {
+  #splide01 {
+    margin-top: 204px;
+  }
 }
 
 .splide_arrow {
@@ -1345,38 +1351,38 @@ ul.splide_pagination:nth-child(5) {
 }
 
 /* Style the header */
-#header {
-  height: 150px;
-}
-
-@media (min-width: 768px) {
-  #header {
-    height: 110px;
-  }
+header {
+  background: #ddd;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  -webkit-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  z-index: 99999;
 }
 
 @media (min-width: 998px) {
-  #header {
-    height: 222px;
+  header {
+    height: 222.2px;
+  }
+}
+
+.nav-up {
+  top: -50px;
+}
+
+@media (min-width: 996px) {
+  .nav-up {
+    top: -222.2px;
   }
 }
 
 #header-container {
   background: white;
-  z-index: 9999;
+  z-index: 99999999;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-}
-
-.nav-up {
-  top: -150px;
 }
 
 #latestContainer {
