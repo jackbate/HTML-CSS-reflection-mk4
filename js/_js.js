@@ -9,10 +9,10 @@ function menuFunction(x) {
     x.classList.toggle("menu-display");
 } 
 
-function closeFunction(y){
-    document.getElementById('main').remove('menu-display');
-    document.getElementById('main').removeClass('change');
-}
+// function closeFunction(y){
+//     document.getElementById('main').remove('menu-display');
+//     document.getElementById('main').removeClass('change');
+// }
 
 // document.getElementById('tint').onclick = function(){
 //     document.getElementById("main").classList.remove("menu-display");

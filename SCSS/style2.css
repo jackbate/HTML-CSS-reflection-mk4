@@ -724,7 +724,7 @@ buttons .uppurpbtn {
   text-align: center;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 811px) {
   .banner-btn {
     top: 55%;
     margin-left: 0px;
@@ -740,7 +740,7 @@ buttons .uppurpbtn {
 
 @media (min-width: 1218px) {
   .banner-btn {
-    left: 20.5vw;
+    left: 26vw;
     top: 58%;
   }
 }
@@ -910,12 +910,6 @@ ul.splide_pagination:nth-child(5) {
 }
 
 /* splide.min.css | http://127.0.0.1:5502/splide/splide.min.css */
-.splide__pagination__page {
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
-}
-
 #splide01 {
   margin-top: 95px;
 }
@@ -2128,6 +2122,16 @@ body {
 
 .nodec {
   text-decoration: none;
+}
+
+#fullTint {
+  width: 100%;
+  height: 10000px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 999999999;
+  top: 0;
+  left: 0;
 }
 
 .formcontent {

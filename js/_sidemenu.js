@@ -22,7 +22,7 @@ function toggleSlideMenu(x){
         document.body.style.position = "relative";
         document.body.style.overflowY = "hidden";
         document.getElementById('mySidebar').style.boxShadow = "0 0 0 10000px rgba(0,0,0,.50)";
-        document.getElementById('fulltint').style.pointerEvents = "none"
+        // document.getElementById('fulltint').style.pointerEvents = "none"
     }
     else{
         document.getElementById("mySidebar").style.width = "0";
