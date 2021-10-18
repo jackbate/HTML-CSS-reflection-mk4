@@ -62,3 +62,13 @@ body{
 .nodec{
     text-decoration: none;
 }
+
+#fullTint{
+    width: 100%;
+    height: 10000px;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 999999999;
+    top: 0;
+    left: 0;
+}

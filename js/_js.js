@@ -9,6 +9,20 @@ function menuFunction(x) {
     x.classList.toggle("menu-display");
 } 
 
+function closeFunction(y){
+    document.getElementById('main').remove('menu-display');
+    document.getElementById('main').removeClass('change');
+}
+
+// document.getElementById('tint').onclick = function(){
+//     document.getElementById("main").classList.remove("menu-display");
+//     document.getElementById("main").classList.remove("change");
+// }
+
+// function bodyFunction(x){
+//     x.classList.remove("menu-display");
+//     x.classList.remove("change");
+// }
 
 
 // function myFunction(mediaQueryscreen) {
